@@ -1,0 +1,76 @@
+html, body{
+    background-color: lightblue;
+    height: 100%;
+}
+
+#about{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
+
+#education{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
+
+#work-research{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
+
+#projects{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
+
+#skills{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
+
+#contact{
+    text-align:left;
+    text-decoration:none;
+    background-color:white;
+    color:darkslategray;
+    display:inline-block;
+    width:60vw;
+    height:27vh;
+    margin:15px;
+    padding:30px;
+}
