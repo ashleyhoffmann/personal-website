@@ -31,8 +31,10 @@ a {
     width: 3%;
     height: 66%;
     padding-right: 6%;
+    border: 0;
 }
 
 #words {
     float: right;
+    overflow-wrap: break-word;
 }
