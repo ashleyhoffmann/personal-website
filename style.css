@@ -38,3 +38,8 @@ a {
     float: right;
     overflow-wrap: break-word;
 }
+
+#about {
+    color: lawngreen;
+    style: "text-decoration:none";
+}
