@@ -1,76 +1,45 @@
-html, body{
-    background-color: lightblue;
-    height: 100%;
+body {
+/*    background-color: #cadfff;
+    font-family: 'Pontano Sans', sans-serif;
+    color: #525765; */
+    background-color: #000000;
+    color: #011efe;
+    font-family: 'VT323', monospace;
+/*    text-align: left; */
+    margin-left: 15%;
+    display: inline-block;
+    padding-top: 3%;
 }
 
-#about{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+h1 {
+    font-size: xx-large;
 }
 
-#education{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+a {
+    color: white;
+    target: "_blank";
+    style: "text-decoration:none"
 }
 
-#work-research{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+#content {
+    height: 66%;
+    font-size: 120%;
 }
 
-#projects{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+#gif {
+    float: left;
+    width: 3%;
+    height: 66%;
+    padding-right: 6%;
+    border: 0;
 }
 
-#skills{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+#words {
+    float: right;
+    overflow-wrap: break-word;
 }
 
-#contact{
-    text-align:left;
-    text-decoration:none;
-    background-color:white;
-    color:darkslategray;
-    display:inline-block;
-    width:60vw;
-    height:27vh;
-    margin:15px;
-    padding:30px;
+#about {
+    color: lawngreen;
+    style: "text-decoration:none";
 }
