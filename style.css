@@ -7,7 +7,7 @@ body {
     font-family: 'VT323', monospace;
 /*    text-align: left; */
     margin-left: 15%;
-    display: inline-block;
+/*    display: inline-block; */
     padding-top: 3%;
 }
 
@@ -35,7 +35,7 @@ a {
 }
 
 #words {
-    float: right;
+/*    float: right; */
     overflow-wrap: break-word;
 }
 
