@@ -17,19 +17,20 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
     <!-- [endif]-->
 </head>
-<body span style="background-color:lavender">
+<body span style="background-color:floralwhite">
 
- <div id="content" style="display:block" style="color:mediumslateblue">
+ <div id="content" style="display:block" style="color:darkslategrey">
     <span id="words" style="margin-left: 0%">
-        <span style="font-family: Arial">
-        <h1 span style="color:royalblue"><3 <3 <3</h1>
-        <form span style="color:royalblue" action="trackerdatacollection.php" method="POST">
-        <span style="background-color: lavender">
-
-            <span style="font-weight: bold">~ BASICS ~</span><br><br>
+<!--        <fieldset style="font-family:'Bodoni 72'"> -->
+            <span style="margin-left: 3%">
+        <h1 span style="color:darkslategrey">TRACKER</h1>
+        <form span style="color:darkslategrey" action="trackerdatacollection.php" method="POST">
+        <span style="background-color: floralwhite">
+            <fieldset style="font-family:'Bodoni 72'">
+            <span style="font-weight: bold">--- BASICS ---</span><br><br>
 
             Date:<br>
-            <input type="date" name="todaysdate" required><br><br>
+            <input type="date" class="todaysdate" name="todaysdate" required><br><br>
 
             Took Seroquel last night at:<br>
             <input type="time" name="seroquel"><br>
@@ -52,16 +53,55 @@
             <input type="time" name="wellbutrin"><br>
             <input type="checkbox" name="wellbutrinforgot">shit, I forgot<br>
             (if I forgot did I take a half and at what time?)<br>
+            <textarea name="wellbutrindetails_ta"></textarea><br>
             <input type="text" name="wellbutrindetails"><br><br>
 
+            <span style="text-decoration: underline">If this was an episode of Friends, it would be called...</span><br>
+            <textarea name="friends_ta"></textarea><br>
+            The One <input type="text" name="friends"><br>
+            (or if two, The One <input type="text" name="friends2">)<br><br>
 
-            <span style="font-weight: bold">~ DAY RECORD ~</span><br><br>
+            <span style="font-weight: bold">--- DAY RECORD ---</span><br><br>
 
-            <span style="text-decoration: underline">Day mood(s):</span><br>
+            <span style="text-decoration: underline">Overall day dreaminess, on a scale from 1 to 10:</span><br>
+            <input type="number" name="daydreaminess" min="1" max="11"><br><br>
+
+            <span style="text-decoration: underline">Day surface mood(s):</span><br>
+            <input type="checkbox" name="daymood1_day" value="happy">really truly feeling happy<br>
+            <input type="checkbox" name="daymood2_day" value="helpedsomeone">felt fulfilled because I helped someone<br>
+            <input type="checkbox" name="daymood3_day" value="helpedmyself">felt fulfilled because I helped myself<br>
+            <input type="checkbox" name="daymood4_day" value="ontherighttrack">feeling on the right track overall<br>
+            <input type="checkbox" name="daymood5_day" value="content">happy, content, fine, maybe mindless<br>
+            <input type="checkbox" name="daymood6_day" value="mediocre">mediocre, a little down<br>
+            <input type="checkbox" name="daymood7_day" value="sad">sad, pain, maybe heartache<br>
+            <input type="checkbox" name="daymood8_day" value="mad">mad, frustrated, cranky, or stubborn<br>
+            <input type="checkbox" name="daymood9_day" value="stressed">really stressed<br>
+            <input type="checkbox" name="daymood10_day" value="avoidant">feeling overwhelming avoidant dread in the back of my mind<br>
+            <input type="checkbox" name="daymood11_day" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
+            <input type="checkbox" name="daymood12_day" value="pushingemotions">felt emotionally in tune, allowed myself to feel<br>
+            <input type="checkbox" name="daymood13_day" value="cried">I cried<br>
+            <input type="text" name="daymooddetails"><br><br>
+
+<!--            <span style="text-decoration: underline">Day relative-by-week mood(s):</span><br>
+            <input type="checkbox" name="daymood1_week" value="happy">really truly feeling happy<br>
+            <input type="checkbox" name="daymood2_week" value="helpedsomeone">felt fulfilled because I helped someone<br>
+            <input type="checkbox" name="daymood3_week" value="helpedmyself">felt fulfilled because I helped myself<br>
+            <input type="checkbox" name="daymood4_week" value="ontherighttrack">feeling on the right track overall<br>
+            <input type="checkbox" name="daymood5_week" value="content">happy, content, fine, maybe mindless<br>
+            <input type="checkbox" name="daymood6_week" value="mediocre">mediocre, a little down<br>
+            <input type="checkbox" name="daymood7_week" value="sad">sad, pain, maybe heartache<br>
+            <input type="checkbox" name="daymood8_week" value="stressed">really stressed<br>
+            <input type="checkbox" name="daymood9_week" value="avoidant">feeling overwhelming avoidant dread in the back of my mind<br>
+            <input type="checkbox" name="daymood10_week" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
+            <input type="checkbox" name="daymood11_week" value="pushingemotions">felt emotionally in tune, allowed myself to feel<br>
+            <input type="checkbox" name="daymood12_week" value="cried">I cried<br>
+            <input type="text" name="daymooddetails"><br><br>
+
+            <span style="text-decoration: underline">Day relative-to-life existential mood(s):</span><br>
             <input type="checkbox" name="daymood1" value="happy">really truly feeling happy<br>
             <input type="checkbox" name="daymood2" value="helpedsomeone">felt fulfilled because I helped someone<br>
             <input type="checkbox" name="daymood3" value="helpedmyself">felt fulfilled because I helped myself<br>
-            <input type="checkbox" name="daymood4" value="ontherighttrack">feeling on the right track<br>
+            <input type="checkbox" name="daymood4" value="ontherighttrack">feeling on the right track overall<br>
             <input type="checkbox" name="daymood5" value="content">happy, content, fine, maybe mindless<br>
             <input type="checkbox" name="daymood6" value="mediocre">mediocre, a little down<br>
             <input type="checkbox" name="daymood7" value="sad">sad, pain, maybe heartache<br>
@@ -71,9 +111,6 @@
             <input type="checkbox" name="daymood11" value="pushingemotions">felt emotionally in tune, allowed myself to feel<br>
             <input type="checkbox" name="daymood12" value="cried">I cried<br>
             <input type="text" name="daymooddetails"><br><br>
-
-            <span style="text-decoration: underline">Day dreaminess, on a scale from 1 to 10:</span><br>
-            <input type="number" name="daydreaminess" min="1" max="11"><br><br>
 
             <span style="text-decoration: underline">Day self-image:</span><br>
             <input type="radio" name="dayselfimage" value="hot">feelin' hot as hell tbh <3<br>
@@ -97,39 +134,40 @@
             <input type="radio" name="dayiate" value="somuchokay">so much but it's okay<br>
             <input type="radio" name="dayiate" value="somuchbad">so much and I'm upset<br>
             <input type="radio" name="dayhealth" value="healthy">mostly healthy food, it felt healthy<br>
-            <input type="radio" name="dayhealth" value="unhealthy">mostly unhealthy food, it felt unhealthy<br><br>
+            <input type="radio" name="dayhealth" value="unhealthy">mostly unhealthy food, it felt unhealthy<br><br> -->
 
             <span style="text-decoration: underline">Appetite in the day:</span><br>
-            <input type="radio" name="dayappetite" value="low">low<br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="low">low<br>
             <input type="radio" name="dayappetite" value="lowtasteless">low + tasteless<br>
             <input type="radio" name="dayappetite" value="middle">middle<br>
             <input type="radio" name="dayappetite" value="middletasteless">middle + tasteless<br>
             <input type="radio" name="dayappetite" value="high">high<br>
             <input type="radio" name="dayappetite" value="hightasteless">high + tasteless<br><br>
 
-            <span style="text-decoration: underline">Notes about day food/weight/health/body, if any:</span><br>
+<!--            <span style="text-decoration: underline">Notes about day food/weight/health/body, if any:</span><br>
             <input type="text" name="dayfoodnotes"><br>
             <input type="checkbox" name="dayvegan1" value="vegan">100% vegan<br>
             <input type="checkbox" name="dayvegan2" value="smidge">broke veganism, just a smidge<br>
             <input type="checkbox" name="dayvegan3" value="broke">...broke veganism<br>
-            <input type="checkbox" name="daytummy4" value="notroubles">no tummy troubles<br>
-            <input type="checkbox" name="daytummy5" value="troubles">tummy troubles<br><br>
+            <input type="checkbox" name="daytummy_good" value="notroubles">no tummy troubles<br>
+            <input type="checkbox" name="daytummy_bad" value="troubles">tummy troubles<br><br> -->
 
-            <span style="font-weight: bold">~ NIGHT RECORD ~</span><br><br>
+            <span style="font-weight: bold">--- NIGHT RECORD ---</span><br><br>
 
             <span style="text-decoration: underline"> Night mood(s):</span><br>
-            <input type="checkbox" name="nightmood1" value="happy">really truly feeling happy<br>
-            <input type="checkbox" name="nightmood2" value="helpedsomeone">felt fulfilled because I helped someone<br>
-            <input type="checkbox" name="nightmood3" value="helpedmyself">felt fulfilled because I helped myself<br>
-            <input type="checkbox" name="nightmood4" value="ontherighttrack">feeling on the right track<br>
-            <input type="checkbox" name="nightmood5" value="content">happy, content, fine, maybe mindless<br>
-            <input type="checkbox" name="nightmood6" value="mediocre">mediocre, a little down<br>
-            <input type="checkbox" name="nightmood7" value="sad">sad, pain, maybe heartache<br>
-            <input type="checkbox" name="nightmood8" value="stressed">really stressed<br>
-            <input type="checkbox" name="nightmood9" value="avoidant">feeling overwhelming avoidant dread in the back of my mind<br>
-            <input type="checkbox" name="nightmood10" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
-            <input type="checkbox" name="nightmood11" value="pushingemotions">felt emotionally in tune, allowed myself to feel<br>
-            <input type="checkbox" name="nightmood12" value="cried">I cried<br>
+            <input type="checkbox" name="nightmood1_day" value="happy">really truly feeling happy<br>
+            <input type="checkbox" name="nightmood2_day" value="helpedsomeone">felt fulfilled because I helped someone<br>
+            <input type="checkbox" name="nightmood3_day" value="helpedmyself">felt fulfilled because I helped myself<br>
+            <input type="checkbox" name="nightmood4_day" value="ontherighttrack">feeling on the right track<br>
+            <input type="checkbox" name="nightmood5_day" value="content">happy, content, fine, maybe mindless<br>
+            <input type="checkbox" name="nightmood6_day" value="mediocre">mediocre, a little down<br>
+            <input type="checkbox" name="nightmood7_day" value="sad">sad, pain, maybe heartache<br>
+            <input type="checkbox" name="nightmood8_day" value="mad">mad, frustrated, cranky, or stubborn<br>
+            <input type="checkbox" name="nightmood9_day" value="stressed">really stressed<br>
+            <input type="checkbox" name="nightmood10_day" value="avoidant">feeling overwhelming avoidant dread in the back of my mind<br>
+            <input type="checkbox" name="nightmood11_day" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
+            <input type="checkbox" name="nightmood12_day" value="pushingemotions">felt emotionally in tune, allowed myself to feel<br>
+            <input type="checkbox" name="nightmood13_day" value="cried">I cried<br>
             <input type="text" name="nightmooddetails"><br><br>
 
             <span style="text-decoration: underline">Night dreaminess, on a scale from 1 to 10:</span><br>
@@ -142,7 +180,7 @@
             <input type="radio" name="nightselfimage" value="not">not feelin' attractive<br>
             <input type="radio" name="nightselfimage" value="egad">egad<br><br>
 
-            <span style="text-decoration: underline">Night weight:</span><br>
+<!--            <span style="text-decoration: underline">Night weight:</span><br>
             <input type="radio" name="nightweight" value="skinny">really thin<br>
             <input type="radio" name="nightweight" value="skinny">thin<br>
             <input type="radio" name="nightweight" value="skinny">a little more than I'd like<br>
@@ -155,7 +193,7 @@
             <input type="radio" name="nightiate" value="good">restricted but good<br>
             <input type="radio" name="nightiate" value="normal">a normal amount (/idk)<br>
             <input type="radio" name="nightiate" value="somuchokay">so much but it's okay<br>
-            <input type="radio" name="nightiate" value="somuchbad">so much and I'm upset<br><br>
+            <input type="radio" name="nightiate" value="somuchbad">so much and I'm upset<br><br> -->
 
             <span style="text-decoration: underline">Appetite in the night:</span><br>
             <input type="radio" name="nightappetite" value="low">low<br>
@@ -165,201 +203,207 @@
             <input type="radio" name="nightappetite" value="high">high<br>
             <input type="radio" name="nightappetite" value="hightasteless">high + tasteless<br><br>
 
-            <span style="text-decoration: underline">Notes about day food/weight/health/body, if any:</span><br>
+<!--            <span style="text-decoration: underline">Notes about day food/weight/health/body, if any:</span><br>
             <input type="text" name="nightfoodnotes"><br><br>
             <input type="checkbox" name="nightvegan1" value="vegan">100% vegan<br>
             <input type="checkbox" name="nightvegan2" value="smidge">broke veganism, just a smidge<br>
             <input type="checkbox" name="nightvegan3" value="broke">...broke veganism<br>
             <input type="checkbox" name="daytummy4" value="notroubles">no tummy troubles<br>
-            <input type="checkbox" name="daytummy5" value="troubles">tummy troubles<br><br>
+            <input type="checkbox" name="daytummy5" value="troubles">tummy troubles<br><br> -->
 
-            <span style="font-weight: bold">~ PATTERN SEARCHING: CORE ~</span><br><br>
+                <!--            <span style="font-weight: bold">--- PATTERN SEARCHING: CORE ---</span><br><br>
 
-            <span style="text-decoration: underline">Did you take any drugs today?</span><br>
-            <input type="checkbox" name="drugs1">yes, just alcohol<br>
-            <input type="checkbox" name="drugs2">weed<br>
-            <input type="checkbox" name="drugs3">Adderall<br>
-            <input type="checkbox" name="drugs4">a psychedelic<br>
-            <input type="text" name="drugs"><br><br>
+                            <span style="text-decoration: underline">Did I take any drugs today?</span><br>
+                            <input type="checkbox" name="drugs1">yes, just alcohol<br>
+                            <input type="checkbox" name="drugs2">weed<br>
+                            <input type="checkbox" name="drugs3">Adderall<br>
+                            <input type="checkbox" name="drugs4">a psychedelic<br>
+                            <input type="text" name="drugs"><br><br>
 
-            <span style="text-decoration: underline">Were you manic today?</span><br>
-            <input type="radio" name="manic" value="yes">yes<br>
-            <input type="radio" name="manic" value="somewhat">somewhat<br>
-            <input type="radio" name="manic" value="no">no<br><br>
+                            <span style="text-decoration: underline">Was I manic today? (mindlessly working "for no reason")</span><br>
+                            <input type="radio" name="manic" value="yes">yes<br>
+                            <input type="radio" name="manic" value="somewhat">somewhat<br>
+                            <input type="radio" name="manic" value="no">no<br><br>
 
-            <span style="text-decoration: underline">Were you deeply dissociated today?</span><br>
-            <input type="radio" name="dissociated" value="yes">yes<br>
-            <input type="radio" name="dissociated" value="somewhat">somewhat<br>
-            <input type="radio" name="dissociated" value="no">no<br><br>
+                            <span style="text-decoration: underline">Was I depressed today?</span><br>
+                            <input type="radio" name="depressed" value="yes">yes<br>
+                            <input type="radio" name="depressed" value="somewhat">somewhat<br>
+                            <input type="radio" name="depressed" value="no">no<br><br>
 
-            <span style="text-decoration: underline">Were you depressed today?</span><br>
-            <input type="radio" name="depressed" value="yes">yes<br>
-            <input type="radio" name="depressed" value="somewhat">somewhat<br>
-            <input type="radio" name="depressed" value="no">no<br><br>
+                            <span style="text-decoration: underline">Did reality feel 'real' today?</span><br>
+                            <input type="radio" name="dissociated" value="yes">yes<br>
+                            <input type="radio" name="dissociated" value="somewhat">somewhat<br>
+                            <input type="radio" name="dissociated" value="no">no<br><br>
 
-            <span style="text-decoration: underline">Did I go out tonight?</span><br>
-            <input type="radio" name="goout" value="yes">yes<br>
-            <input type="radio" name="goout" value="somewhat">somewhat<br>
-            <input type="radio" name="goout" value="no">no<br>
-            If so, optionally: details? who, what, when, where, why<br>
-            <input type="text" name="gooutdetails"><br><br>
+                            <span style="text-decoration: underline">Was I present & aware of my surroundings today?</span><br>
+                            <input type="radio" name="dissociated" value="yes">yes<br>
+                            <input type="radio" name="dissociated" value="somewhat">somewhat<br>
+                            <input type="radio" name="dissociated" value="no">no<br><br>
 
-            <span style="text-decoration: underline">Were you hungover today?</span><br>
-            <input type="radio" name="hungover" value="yes">yep, I felt icky all day<br>
-            <input type="radio" name="hungover" value="yesday">yes but it was gone by the night<br>
-            <input type="radio" name="hungover" value="no">nope<br><br>
+                            <span style="text-decoration: underline">Did things feel gray or kind of bright and clear today?</span><br>
+                            <input type="radio" name="dissociated" value="yes">gray<br>
+                            <input type="radio" name="dissociated" value="somewhat">middle<br>
+                            <input type="radio" name="dissociated" value="no">clear<br><br>
 
-            <span style="text-decoration: underline">Did I leave the house today?</span><br>
-            <input type="radio" name="goout" value="yes">yes<br>
-            <input type="radio" name="goout" value="yes">nope :~/<br><br>
+                            <span style="text-decoration: underline">Did I go out tonight?</span><br>
+                            <input type="radio" name="goout" value="yes">yes<br>
+                            <input type="radio" name="goout" value="somewhat">somewhat<br>
+                            <input type="radio" name="goout" value="no">no<br>
+                            If so, optionally: details? who, what, when, where, why<br>
+                            <input type="text" name="gooutdetails"><br><br>
 
-            <span style="text-decoration: underline">Hours spent on compulsions:</span><br>
-            <input type="number" name="compulsionhours" min="0" max="24"><br><br>
+                            <span style="text-decoration: underline">Was I hungover today?</span><br>
+                            <input type="radio" name="hungover" value="yes">yep, I felt icky all day<br>
+                            <input type="radio" name="hungover" value="yesday">yes but it was gone by the night<br>
+                            <input type="radio" name="hungover" value="no">nope<br><br>
 
-            <span style="text-decoration: underline">Which compulsions/mania?</span><br>
-            <input type="checkbox" name="compulsions1" value="spotify">Spotify<br>
-            <input type="checkbox" name="compulsions2" value="mbti">MBTI<br>
-            <input type="checkbox" name="compulsions3" value="depopselling">Depop, selling<br>
-            <input type="checkbox" name="compulsions4" value="depopbuying">Depop, buying<br>
-            <input type="checkbox" name="compulsions5" value="radio">Radio, excessively<br>
-            <input type="text" name="othercompulsions"><br><br>
+                            <span style="text-decoration: underline">Did I leave the house today?</span><br>
+                            <input type="radio" name="goout" value="yes">yes<br>
+                            <input type="radio" name="goout" value="yes">nope...<br><br>
 
-            <span style="text-decoration: underline">What were you avoiding, what are you stressed about?</span><br>
-            <input type="checkbox" name="stressors1" value="current classes">current classes<br>
-            <input type="checkbox" name="stressors2" value="grandparents">grandparents<br>
-            <input type="checkbox" name="stressors3" value="money">money<br>
-            <input type="checkbox" name="stressors4" value="existential">existential future career etc<br>
-            <input type="checkbox" name="stressors5" value="loneliness">breakup, loneliness, jealousy<br>
-            <input type="checkbox" name="stressors6" value="nostalgia">nostalgia issues from my past<br>
-            <input type="checkbox" name="stressors7" value="selfworth">question of self worth<br>
-            <input type="checkbox" name="stressors8" value="temporary">a temporary drama that will pass<br>
-            <input type="text" name="otherstressors"><br>
-            Conscious stress level from 1 to 10: <input type="number" name="stresslevel_c" min="0" max="11"><br>
-            Unconscious sensed stress level from 1 to 10: <input type="number" name="stresslevel_uc" min="0" max="11"><br><br>
+                            <span style="text-decoration: underline">Hours spent on compulsions:</span><br>
+                            <input type="number" name="compulsionhours" min="0" max="24"><br><br>
 
-            <span style="text-decoration: underline">Money spent:</span><br>
-            <input type="checkbox" name="money1" value="none">none<br>
-            <input type="checkbox" name="money2" value="alittle">a little... like <$15-20<br>
-            <input type="checkbox" name="money3" value="notgood">not good actually, like maybe $20-$40<br>
-            <input type="checkbox" name="money4" value="alot">a lot... more than $40...<br>
-            <input type="checkbox" name="money5" value="matters">on stuff that mattered though<br>
-            <input type="checkbox" name="money6" value="matters">on non-essentials...<br>
-            <input type="checkbox" name="money7" value="depop">small victory, I made money on Depop<br>
-            <input type="text" name="moneydetails"><br><br>
+                            <span style="text-decoration: underline">Which compulsions/mania?</span><br>
+                            <input type="checkbox" name="compulsions1" value="spotify">Spotify<br>
+                            <input type="checkbox" name="compulsions2" value="mbti">MBTI<br>
+                            <input type="checkbox" name="compulsions3" value="depopselling">Depop, selling<br>
+                            <input type="checkbox" name="compulsions4" value="depopbuying">Depop, buying<br>
+                            <input type="checkbox" name="compulsions5" value="radio">Radio, excessively<br>
+                            <input type="text" name="othercompulsions"><br><br>
 
-            <span style="text-decoration: underline">Exercise?</span><br>
-            <input type="checkbox" name="exercise1" value="run">went for a run!<br>
-            <input type="checkbox" name="exercise2" value="littlestretch">stretched a little<br>
-            <input type="checkbox" name="exercise3" value="bigstretch">stretched a lot<br>
-            <input type="checkbox" name="exercise4" value="walked">walked a lot<br>
-            <input type="checkbox" name="exercise5" value="laundry">did something else laborious like laundry or cleaning<br>
-            <input type="checkbox" name="exercise6" value="nada">...nada<br><br>
+                            <span style="text-decoration: underline">What was I avoiding, what am I stressed about?</span><br>
+                            <input type="checkbox" name="stressors1" value="current classes">current classes<br>
+                            <input type="checkbox" name="stressors2" value="grandparents">grandparents<br>
+                            <input type="checkbox" name="stressors3" value="money">money<br>
+                            <input type="checkbox" name="stressors4" value="existential">existential future career etc<br>
+                            <input type="checkbox" name="stressors5" value="loneliness">breakup, loneliness, jealousy<br>
+                            <input type="checkbox" name="stressors6" value="nostalgia">nostalgia issues from my past<br>
+                            <input type="checkbox" name="stressors7" value="selfworth">question of self worth<br>
+                            <input type="checkbox" name="stressors8" value="temporary">a temporary drama that will pass<br>
+                            <input type="text" name="otherstressors"><br>
+                            Conscious stress level from 1 to 10: <input type="number" name="stresslevel_c" min="0" max="11"><br>
+                            Unconscious sensed stress level from 1 to 10: <input type="number" name="stresslevel_uc" min="0" max="11"><br><br>
 
-            <span style="text-decoration: underline">Productivity, on a scale from 1 to 10:</span><br>
-            <input type="number" name="productivity" min="0" max="10"><br><br>
+                            <span style="text-decoration: underline">Money spent:</span><br>
+                            <input type="checkbox" name="money1" value="none">none<br>
+                            <input type="checkbox" name="money2" value="alittle">a little... like <$15-20<br>
+                            <input type="checkbox" name="money3" value="notgood">not good actually, like maybe $20-$40<br>
+                            <input type="checkbox" name="money4" value="alot">a lot... more than $40...<br>
+                            <input type="checkbox" name="money5" value="matters">on stuff that mattered though<br>
+                            <input type="checkbox" name="money6" value="matters">on non-essentials...<br>
+                            <input type="checkbox" name="money7" value="depop">small victory, I made money on Depop<br>
+                            <input type="text" name="moneydetails"><br><br>
 
-            <span style="font-weight: bold">~ PATTERN SEARCHING: MORE, IF I'M UP TO IT ~</span><br><br>
+                            <span style="text-decoration: underline">Exercise?</span><br>
+                            <input type="checkbox" name="exercise1" value="run">went for a run!<br>
+                            <input type="checkbox" name="exercise2" value="littlestretch">stretched a little<br>
+                            <input type="checkbox" name="exercise3" value="bigstretch">stretched a lot<br>
+                            <input type="checkbox" name="exercise4" value="walked">walked a lot<br>
+                            <input type="checkbox" name="exercise5" value="laundry">did something else laborious like laundry or cleaning<br>
+                            <input type="checkbox" name="exercise6" value="nada">...nada<br><br>
 
-            <span style="text-decoration: underline">If this was an episode of Friends, it would be called...</span><br>
-            The One <input type="text" name="friends"><br>
-            (or if two, The One <input type="text" name="friends2">)<br><br>
+                            <span style="text-decoration: underline">Productivity, on a scale from 1 to 10:</span><br>
+                            <input type="number" name="productivity" min="0" max="10"><br><br>
 
-            <span style="text-decoration: underline">Did I dream last night?</span><br>
-            <input type="checkbox" name="dreams1" value="yes">yes<br>
-            <input type="checkbox" name="dreams2" value="no">no<br>
-            <input type="checkbox" name="dreams3" value="cantremember">can't remember<br>
-            Details, if interesting: <input type="text" name="dreamdetails"><br><br>
+                            <span style="font-weight: bold">--- PATTERN SEARCHING: MORE, IF I'M UP TO IT ---</span><br><br>
 
-            <span style="text-decoration: underline">Hours spent on Radio:</span><br>
-            <input type="number" name="radio" min="0" max="24"><br><br>
+                            <span style="text-decoration: underline">Did I dream last night?</span><br>
+                            <input type="checkbox" name="dreams1" value="yes">yes<br>
+                            <input type="checkbox" name="dreams2" value="no">no<br>
+                            <input type="checkbox" name="dreams3" value="cantremember">can't remember<br>
+                            Details, if interesting: <input type="text" name="dreamdetails"><br><br>
 
-            <span style="text-decoration: underline">Took vitamins?</span><br>
-            <input type="radio" name="vitamins" value="before4">yes, before 4pm<br>
-            <input type="radio" name="vitamins" value="after4">yes, after 4pm<br>
-            <input type="radio" name="vitamins" value="no">not today oops<br><br>
+                            <span style="text-decoration: underline">Hours spent on Radio:</span><br>
+                            <input type="number" name="radio" min="0" max="24"><br><br>
 
-            <span style="text-decoration: underline">Hours of screen time:</span><br>
-            Phone (from Moment): <input type="number" name="phonescreentime" min="0" max="24"><br>
-            Laptop (estimated): <input type="number" name="laptopscreentime" min="0" max="24"><br>
-            Hours spent watching entertainment media: <input type="number" name="entertainmentscreentime" min="0" max="24"><br><br>
+                            <span style="text-decoration: underline">Took vitamins?</span><br>
+                            <input type="radio" name="vitamins" value="before4">yes, before 4pm<br>
+                            <input type="radio" name="vitamins" value="after4">yes, after 4pm<br>
+                            <input type="radio" name="vitamins" value="no">not today oops<br><br>
 
-            <span style="text-decoration: underline">Hours spent on the couch:</span><br>
-            <input type="number" name="couch" min="0" max="24"><br><br>
+                            <span style="text-decoration: underline">Hours of screen time:</span><br>
+                            Phone (from Moment): <input type="number" name="phonescreentime" min="0" max="24"><br>
+                            Laptop (estimated): <input type="number" name="laptopscreentime" min="0" max="24"><br>
+                            Hours spent watching entertainment media: <input type="number" name="entertainmentscreentime" min="0" max="24"><br><br>
 
-            <span style="text-decoration: underline">Extra strong nostalgia? like a weird fixation on my past/childhood?</span><br>
-            <input type="checkbox" name="nostalgia1" value="yes">yes<br>
-            <input type="checkbox" name="nostalgia2" value="no">nah, not today<br>
-            <input type="checkbox" name="nostalgia3" value="pushed">I pushed those thoughts away<br>
-            <input type="text" name="nostalgiadetails"><br><br>
+                            <span style="text-decoration: underline">Hours spent on the couch:</span><br>
+                            <input type="number" name="couch" min="0" max="24"><br><br>
 
-            <span style="text-decoration: underline">Tracing words with my fingers?:</span><br>
-            <input type="radio" name="tracing" value="alot">a lot<br>
-            <input type="radio" name="tracing" value="alittle">a little<br>
-            <input type="radio" name="tracing" value="no">not today<br><br>
+                            <span style="text-decoration: underline">Extra strong nostalgia? like a weird fixation on my past/childhood?</span><br>
+                            <input type="checkbox" name="nostalgia1" value="yes">yes<br>
+                            <input type="checkbox" name="nostalgia2" value="no">nah, not today<br>
+                            <input type="checkbox" name="nostalgia3" value="pushed">I pushed those thoughts away<br>
+                            <input type="text" name="nostalgiadetails"><br><br>
 
-            <span style="text-decoration: underline">Who did I have meaningful interactions/conversations with?:</span><br>
-            <input type="checkbox" name="conversations1" value="grandparents">grandparents<br>
-            <input type="checkbox" name="conversations2" value="parents">my parents<br>
-            <input type="checkbox" name="conversations3" value="mother">my mother<br>
-            <input type="checkbox" name="conversations4" value="closefriend">a close friend<br>
-            <input type="checkbox" name="conversations5" value="uclapeer">an acquaintance or new friend<br>
-            <input type="checkbox" name="conversations6" value="ex">an ex<br>
-            <input type="text" name="conversationsdetails"><br><br>
+                            <span style="text-decoration: underline">Tracing words with my fingers?:</span><br>
+                            <input type="radio" name="tracing" value="alot">a lot<br>
+                            <input type="radio" name="tracing" value="alittle">a little<br>
+                            <input type="radio" name="tracing" value="no">not today<br><br>
 
-            <span style="text-decoration: underline">Minutes spent meditating:</span><br>
-            <input type="number" name="meditating" min="0" max="1440"><br><br>
+                            <span style="text-decoration: underline">Who did I have meaningful interactions/conversations with?:</span><br>
+                            <input type="checkbox" name="conversations1" value="grandparents">grandparents<br>
+                            <input type="checkbox" name="conversations2" value="parents">my parents<br>
+                            <input type="checkbox" name="conversations3" value="mother">my mother<br>
+                            <input type="checkbox" name="conversations4" value="closefriend">a close friend<br>
+                            <input type="checkbox" name="conversations5" value="uclapeer">an acquaintance or new friend<br>
+                            <input type="checkbox" name="conversations6" value="ex">an ex<br>
+                            <input type="text" name="conversationsdetails"><br><br>
 
-            <span style="text-decoration: underline">Did I learn anything interesting today? academic, Internet rabbit hole, personal, etc?</span><br>
-            <input type="text" name="learn"><br><br>
+                            <span style="text-decoration: underline">Minutes spent meditating:</span><br>
+                            <input type="number" name="meditating" min="0" max="1440"><br><br>
 
-            <span style="text-decoration: underline">Productivity, things I got done today:</span><br>
-            <input type="text" name="productivity"><br>
-            Hours spent productively: <input type="number" name="productivityhours" min="0" max="24"><br><br>
+                            <span style="text-decoration: underline">Did I learn anything interesting today? academic, Internet rabbit hole, personal, etc?</span><br>
+                            <input type="text" name="learn"><br><br>
 
-            <span style="text-decoration: underline">Did I blush?:</span><br>
-            <input type="radio" name="blushing" value="yes">yes, without alcohol<br>
-            <input type="radio" name="blushing" value="alcohol">yes, because of alcohol<br>
-            <input type="radio" name="blushing" value="mildly">mildly?<br>
-            <input type="radio" name="blushing" value="no">no<br><br>
+                            <span style="text-decoration: underline">Productivity, things I got done today:</span><br>
+                            <input type="text" name="productivity"><br>
+                            Hours spent productively: <input type="number" name="productivityhours" min="0" max="24"><br><br>
 
-            An aesthetic/m00d for the day:<br>
-            <input type="text" name="aesthetic"><br><br>
+                            <span style="text-decoration: underline">Did I blush?:</span><br>
+                            <input type="radio" name="blushing" value="yes">yes, without alcohol<br>
+                            <input type="radio" name="blushing" value="alcohol">yes, because of alcohol<br>
+                            <input type="radio" name="blushing" value="mildly">mildly?<br>
+                            <input type="radio" name="blushing" value="no">no<br><br>
 
-            Did I come up with anything creative? Ideas, poetry?<br>
+                            <span style="text-decoration: underline">An aesthetic/m00d for the day:</span><br>
+                            <input type="text" name="aesthetic"><br><br>
+
+            <span style="text-decoration: underline">Did I come up with anything creative? Ideas, poetry?</span><br>
             <input type="text" name="creativity"><br><br>
 
-            Goals:<br>
+            <span style="text-decoration: underline">Goals:</span><br>
             For tomorrow?<input type="text" name="goals1"><br>
             For this week?<input type="text" name="goals2"><br>
             For my life?<input type="text" name="goals3"><br><br>
 
-            Something positive to take away, some self love or optimism:<br>
+            <span style="text-decoration: underline">Something positive to take away, some self love or optimism:</span><br>
             <input type="text" name="cuteness"><br><br>
 
             <span style="text-decoration: underline">If I recorded my waist measurement or weight:</span><br>
             <input type="text" name="measurement"><br><br>
 
             <span style="text-decoration: underline">What outfit(s) did I wear? (optional, may help me remember the day)</span><br>
-            <input type="text" name="outfit"><br><br>
+            <input type="text" name="outfit"><br><br> -->
 
             <span style="text-decoration: underline">Anything else??</span><br>
             <input type="text" name="anythingelse"><br><br>
 
-            CARPE DIEM! CARPE NOCTEM!<br><br><br>
+            ♡♡♡ CARPE DIEM! CARPE NOCTEM! ♡♡♡<br><br><br>
 
-            <input type="submit" value="Submit">
-            <input type="reset"></span>
-        </form>
+<!-- Would be cool to add an "expand/show" section that has posted goals, day/week/life, and a little X by each that would remove them -->
+            <input type="submit" class="submit" value="Submit">
+            <input type="reset"></fieldset>
+            </span></form>
     </span></span>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins)
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed
+// jQuery (necessary for Bootstrap's JavaScript plugins)
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- // Include all compiled plugins (below), or include individual files as needed
 <script src="js/bootstrap.min.js"></script> -->
 
-<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-<script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script> <script>
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyAsA3EJm9qY-SzL5niwCsaDHmKm6HjKVS4",
@@ -370,8 +414,23 @@
         messagingSenderId: "189453065365"
     };
     firebase.initializeApp(config);
-</script>
+    var database = firebase.database();
 
+     var form = {}
+     function writeDateData(form) {
+         todaysdate = $('.todaysdate').val();
+         firebase.database().ref('date/'+todaysdate+'/').set(form);
+     }
+
+     $('.submit').click(function(){
+         form.date = $('.todaysdate').val();
+         form.nightmood1_day = $('.nightmood1_day').val();
+         form.nightmood2_day = $('.nightmood2_day').val();
+         console.log(form);
+         writeDateData(form);
+     } )
+
+ </script>
 <!-- service cloud.firestore {
 match /databases/{database}/documents {
 match /{document=**} {
