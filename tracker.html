@@ -42,7 +42,7 @@
             <input type="time" class="bedtime" name="bedtime"><br>
             ...or did I stay up all night?<br>
             <input type="checkbox" class="allnighter_yes" name="allnighter_yes">yes<br>
-            <input type="checkbox" class="allnighter_no" name="allnighter_nearly">nearly<br><br>
+            <input type="checkbox" class="allnighter_nearly" name="allnighter_nearly">nearly<br><br>
                 <span style="text-decoration: underline">Woke up at:</span><br>
             <input type="time" class="wakeuptime" name="wakeuptime"><br>
                 <span style="text-decoration: underline">If I woke up before that and was up a little, when?</span><br>
@@ -53,7 +53,7 @@
             <input type="checkbox" class="cat" name="cat">...yes<br><br>
                 <span style="text-decoration: underline">Naps?<br></span>
             <input type="checkbox" class="napyesterday" name="napyesterday"> yesterday (if so, length, time, etc: <input type="text" class="napyesterdaydetails" name="napyesterdaydetails">)<br>
-            <input type="checkbox" class="naptoday" name="naptoday">today (if so, length, time, etc: <input type="text" class="naptoday" name="naptoday">)<br><br>
+            <input type="checkbox" class="naptoday" name="naptoday">today (if so, length, time, etc: <input type="text" class="naptodaydetails" name="naptodaydetails">)<br><br>
 
                 <span style="text-decoration: underline">Took Wellbutrin at:</span><br>
             <input type="time" class="wellbutrin" name="wellbutrin"><br>
@@ -85,7 +85,7 @@
             <input type="checkbox" class="daymood11_day" name="daymood11_day" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
             <input type="checkbox" class="daymood12_day" name="daymood12_day" value="notpushingemotions">felt emotionally in tune, allowed myself to feel<br>
             <input type="checkbox" class="daymood13_day" name="daymood13_day" value="cried">I cried<br>
-            <input type="text" class="" name="daymooddetails"><br><br>
+            <input type="text" class="daymooddetails_day" name="daymooddetails_day"><br><br>
 
             <span style="text-decoration: underline">Day relative-to-week mood(s):</span><br>
             <input type="checkbox" class="daymood1_week" name="daymood1_week" value="happy">really truly feeling happy<br>
@@ -101,7 +101,7 @@
             <input type="checkbox" class="daymood11_week" name="daymood11_week" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
             <input type="checkbox" class="daymood12_week" name="daymood12_week" value="notpushingemotions">felt emotionally in tune, allowed myself to feel<br>
             <input type="checkbox" class="daymood13_week" name="daymood13_week" value="cried">I cried<br>
-            <input type="text" name="daymooddetails"><br><br>
+            <input type="text" class="daymooddetails_week" name="daymooddetails_week"><br><br>
 
             <span style="text-decoration: underline">Day relative-to-life existential mood(s):</span><br>
             <input type="checkbox" class="daymood1_life" name="daymood1_life" value="happy">really truly feeling happy<br>
@@ -117,57 +117,90 @@
             <input type="checkbox" class="daymood11_life" name="daymood11_life" value="pushingemotions">felt like I was pushing all my emotions out of my mind<br>
             <input type="checkbox" class="daymood12_life" name="daymood12_life" value="notpushingemotions">felt emotionally in tune, allowed myself to feel<br>
             <input type="checkbox" class="daymood13_life" name="daymood13_life" value="cried">I cried<br>
-            <input type="text" name="daymooddetails"><br><br>
+            <input type="text" class="daymooddetails_life" name="daymooddetails_life"><br><br>
+
+                <span style="text-decoration: underline">Did I take any drugs in the day?</span><br>
+                <input type="checkbox" class="daydrugs1" name="daydrugs1">just light/moderate alcohol<br>
+                <input type="checkbox" class="daydrugs2" name="daydrugs2">moderate/heavy alcohol<br>
+                <input type="checkbox" class="daydrugs3" name="daydrugs3">weed<br>
+                <input type="checkbox" class="daydrugs4" name="daydrugs4">Adderall<br>
+                <input type="checkbox" class="daydrugs5" name="daydrugs5">a psychedelic<br>
+                <input type="text" class="daydrugs" name="daydrugs"><br><br>
+
+                <span style="text-decoration: underline">Was I manic in the day? (mindlessly working "for no reason")</span><br>
+                <input type="radio" class="daymanic" name="daymanic" value="yes">yes<br>
+                <input type="radio" class="daymanic" name="daymanic" value="somewhat">somewhat<br>
+                <input type="radio" class="daymanic" name="daymanic" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Was I depressed in the day?</span><br>
+                <input type="radio" class="daydepressed" name="daydepressed" value="yes">yes<br>
+                <input type="radio" class="daydepressed" name="daydepressed" value="somewhat">somewhat<br>
+                <input type="radio" class="daydepressed" name="daydepressed" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Did reality feel 'real' in the day?</span><br>
+                <input type="radio" class="dayrealityreal" name="dayrealityreal" value="yes">yes<br>
+                <input type="radio" class="dayrealityreal" name="dayrealityreal" value="somewhat">somewhat<br>
+                <input type="radio" class="dayrealityreal" name="dayrealityreal" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Was I present & aware of my surroundings in the day?</span><br>
+                <input type="radio" class="daydayfeelpresent" name="dayfeelpresent" value="yes">yes<br>
+                <input type="radio" class="dayfeelpresent" name="dayfeelpresent" value="somewhat">somewhat<br>
+                <input type="radio" class="dayfeelpresent" name="dayfeelpresent" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Did things feel gray or kind of bright and clear in the day?</span><br>
+                <input type="radio" class="daycloudiness" name="daycloudiness" value="gray">gray & foggy<br>
+                <input type="radio" class="daycloudiness" name="daycloudiness" value="middle">middle<br>
+                <input type="radio" class="daycloudiness" name="daycloudiness" value="clear">clear<br><br>
 
             <span style="text-decoration: underline">Day self-image:</span><br>
-            <input type="radio" name="dayselfimage" value="hot">feelin' hot as hell tbh <3<br>
-            <input type="radio" name="dayselfimage" value="pretty">feelin' pretty :~)<br>
-            <input type="radio" name="dayselfimage" value="okay">feelin' okay, it'll do<br>
-            <input type="radio" name="dayselfimage" value="not">not feelin' attractive<br>
-            <input type="radio" name="dayselfimage" value="egad">egad<br><br>
+            <input type="radio" class="dayselfimage" name="dayselfimage" value="hot">feelin' hot as hell tbh <3<br>
+            <input type="radio" class="dayselfimage" name="dayselfimage" value="pretty">feelin' pretty :~)<br>
+            <input type="radio" class="dayselfimage" name="dayselfimage" value="okay">feelin' okay, it'll do<br>
+            <input type="radio" class="dayselfimage" name="dayselfimage" value="not">not feelin' attractive<br>
+            <input type="radio" class="dayselfimage" name="dayselfimage" value="egad">egad<br><br>
 
             <span style="text-decoration: underline">Day weight:</span><br>
-            <input type="radio" name="dayweight" value="skinny">really thin<br>
-            <input type="radio" name="dayweight" value="skinny">thin<br>
-            <input type="radio" name="dayweight" value="skinny">a little more than I'd like<br>
-            <input type="radio" name="dayweight" value="skinny">feelin' big<br>
-            <input type="radio" name="dayweight" value="skinny">kind of bloated<br>
-            <input type="radio" name="dayweight" value="skinny">very bloated<br><br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">really thin<br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">thin<br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">a little more than I'd like<br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">feelin' big<br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">kind of bloated<br>
+            <input type="radio" class="dayweight" name="dayweight" value="skinny">very bloated<br><br>
 
             <span style="text-decoration: underline">In the day I ate:</span><br>
-            <input type="radio" name="dayiate" value="very little">very little<br>
-            <input type="radio" name="dayiate" value="good">restricted but good<br>
-            <input type="radio" name="dayiate" value="normal">a normal amount (/idk)<br>
-            <input type="radio" name="dayiate" value="somuchokay">so much but it's okay<br>
-            <input type="radio" name="dayiate" value="somuchbad">so much and I'm upset<br>
-            <input type="radio" name="dayhealth" value="healthy">mostly healthy food, it felt healthy<br>
-            <input type="radio" name="dayhealth" value="unhealthy">mostly unhealthy food, it felt unhealthy<br><br>
+            <input type="radio" class="dayiate" name="dayiate" value="very little">very little<br>
+            <input type="radio" class="dayiate" name="dayiate" value="good">restricted but good<br>
+            <input type="radio" class="dayiate" name="dayiate" value="normal">a normal amount (/idk)<br>
+            <input type="radio" class="dayiate" name="dayiate" value="somuchokay">so much but it's okay<br>
+            <input type="radio" class="dayiate" name="dayiate" value="somuchbad">so much and I'm upset<br>
+            <input type="radio" class="dayhealth" name="dayhealth" value="healthy">mostly healthy food, it felt healthy<br>
+            <input type="radio" class="dayhealth" name="dayhealth" value="unhealthy">mostly unhealthy food, it felt unhealthy<br><br>
 
             <span style="text-decoration: underline">Appetite in the day:</span><br>
             <input type="radio" class="dayappetite" name="dayappetite" value="low">low<br>
-            <input type="radio" name="dayappetite" value="lowtasteless">low + tasteless<br>
-            <input type="radio" name="dayappetite" value="middle">middle<br>
-            <input type="radio" name="dayappetite" value="middletasteless">middle + tasteless<br>
-            <input type="radio" name="dayappetite" value="high">high<br>
-            <input type="radio" name="dayappetite" value="hightasteless">high + tasteless<br><br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="lowtasteless">low + tasteless<br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="middle">middle<br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="middletasteless">middle + tasteless<br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="high">high<br>
+            <input type="radio" class="dayappetite" name="dayappetite" value="hightasteless">high + tasteless<br><br>
 
             <span style="text-decoration: underline">What outfit did I wear in the day? (to help remember)</span><br>
             <input type="text" class="outfitday" name="outfitday"><br><br>
 
 
             <span style="text-decoration: underline">Notes about day food/weight/health/body, if any:</span><br>
-            <input type="text" name="dayfoodnotes"><br>
-            <input type="checkbox" name="dayvegan1" value="vegan">100% vegan<br>
-            <input type="checkbox" name="dayvegan2" value="smidge">broke veganism, just a smidge<br>
-            <input type="checkbox" name="dayvegan3" value="broke">...broke veganism<br>
-            <input type="checkbox" name="daytummy_good" value="notroubles">no tummy troubles<br>
-            <input type="checkbox" name="daytummy_bad" value="troubles">tummy troubles<br>
+            <input type="text" class="dayfoodnotes" name="dayfoodnotes"><br>
+            <input type="checkbox" class="dayvegan1" name="dayvegan1" value="vegan">100% vegan<br>
+            <input type="checkbox" class="dayvegan2" name="dayvegan2" value="smidge">broke veganism, just a smidge<br>
+            <input type="checkbox" class="dayvegan3" name="dayvegan3" value="broke">...broke veganism<br>
+            <input type="checkbox" class="daytummy_good" name="daytummy_good" value="notroubles">no tummy troubles<br>
+            <input type="checkbox" class="daytummy_bad" name="daytummy_bad" value="troubles">tummy troubles<br>
 
             </fieldset><fieldset>
             <br><span style="font-weight: bold">NIGHT RECORD</span><br><br>
 
             <span style="text-decoration: underline">Overall night dreaminess, on a scale from 1 to 10:</span><br>
-            <input type="number" name="nightdreaminess" min="1" max="11"><br><br>
+            <input type="number" class="nightdreaminess" name="nightdreaminess" min="1" max="11"><br><br>
 
             <span style="text-decoration: underline">Night surface mood(s):</span><br>
             <input type="checkbox" class="nightmood1_day" name="nightmood1_day" value="happy">really truly feeling happy<br>
@@ -217,6 +250,39 @@
             <input type="checkbox" class="nightmood13_life" name="nightmood13_life" value="cried">I cried<br>
             <input type="text" class="nightmooddetails_life" name="nightmooddetails"><br><br>
 
+                <span style="text-decoration: underline">Did I take any drugs in the night?</span><br>
+                <input type="checkbox" class="nightdrugs1" name="nightdrugs1">just light/moderate alcohol<br>
+                <input type="checkbox" class="nightdrugs2" name="nightdrugs2">moderate/heavy alcohol<br>
+                <input type="checkbox" class="nightdrugs3" name="nightdrugs3">weed<br>
+                <input type="checkbox" class="nightdrugs4" name="nightdrugs4">Adderall<br>
+                <input type="checkbox" class="nightdrugs5" name="nightdrugs5">a psychedelic<br>
+                <input type="text" class="nightdrugs" name="nightdrugs"><br><br>
+
+                <span style="text-decoration: underline">Was I manic in the day? (mindlessly working "for no reason")</span><br>
+                <input type="radio" class="nightmanic" name="nightmanic" value="yes">yes<br>
+                <input type="radio" class="nightmanic" name="nightmanic" value="somewhat">somewhat<br>
+                <input type="radio" class="nightmanic" name="nightmanic" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Was I depressed in the day?</span><br>
+                <input type="radio" class="nightdepressed" name="nightdepressed" value="yes">yes<br>
+                <input type="radio" class="nightdepressed" name="nightdepressed" value="somewhat">somewhat<br>
+                <input type="radio" class="nightdepressed" name="nightdepressed" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Did reality feel 'real' in the day?</span><br>
+                <input type="radio" class="nightrealityreal" name="nightrealityreal" value="yes">yes<br>
+                <input type="radio" class="nightrealityreal" name="nightrealityreal" value="somewhat">somewhat<br>
+                <input type="radio" class="nightrealityreal" name="nightrealityreal" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Was I present & aware of my surroundings in the day?</span><br>
+                <input type="radio" class="nightfeelpresent" name="nightfeelpresent" value="yes">yes<br>
+                <input type="radio" class="nightfeelpresent" name="nightfeelpresent" value="somewhat">somewhat<br>
+                <input type="radio" class="nightfeelpresent" name="nightfeelpresent" value="no">no<br><br>
+
+                <span style="text-decoration: underline">Did things feel gray or kind of bright and clear in the day?</span><br>
+                <input type="radio" class="nightcloudiness" name="nightcloudiness" value="gray">gray & foggy<br>
+                <input type="radio" class="nightcloudiness" name="nightcloudiness" value="middle">middle<br>
+                <input type="radio" class="nightcloudiness" name="nightcloudiness" value="clear">clear<br><br>
+
             <span style="text-decoration: underline">Night self-image:</span><br>
             <input type="radio" class="nightselfimage" name="nightselfimage" value="hot">feelin' hot as hell tbh <3<br>
             <input type="radio" class="nightselfimage" name="nightselfimage" value="pretty">feelin' pretty :~)<br>
@@ -238,6 +304,8 @@
             <input type="radio" class="nightiate" name="nightiate" value="normal">a normal amount (/idk)<br>
             <input type="radio" class="nightiate" name="nightiate" value="somuchokay">so much but it's okay<br>
             <input type="radio" class="nightiate" name="nightiate" value="somuchbad">so much and I'm upset<br><br>
+            <input type="radio" class="nighthealth" name="nighthealth" value="healthy">mostly healthy food, it felt healthy<br>
+            <input type="radio" class="nighthealth" name="nighthealth" value="unhealthy">mostly unhealthy food, it felt unhealthy<br><br>
 
             <span style="text-decoration: underline">Appetite in the night:</span><br>
             <input type="radio" class="nightappetite" name="nightappetite" value="low">low<br>
@@ -256,44 +324,11 @@
             <input type="checkbox" class="nightvegan1" name="nightvegan1" value="vegan">100% vegan<br>
             <input type="checkbox" class="nightvegan2" name="nightvegan2" value="smidge">broke veganism, just a smidge<br>
             <input type="checkbox" class="nightvegan3" name="nightvegan3" value="broke">...broke veganism<br>
-            <input type="checkbox" class="nighttummy4" name="nighttummy4" value="notroubles">no tummy troubles<br>
-            <input type="checkbox" class="nighttummy5" name="nighttummy5" value="troubles">tummy troubles<br>
+            <input type="checkbox" class="nighttummy_good" name="nighttummy4" value="notroubles">no tummy troubles<br>
+            <input type="checkbox" class="nighttummy_bad" name="nighttummy5" value="troubles">tummy troubles<br>
 
                 </fieldset><fieldset>
                 <br><span style="font-weight: bold">PATTERN SEARCHING: CORE</span><br><br>
-
-                <span style="text-decoration: underline">Did I take any drugs today?</span><br>
-                <input type="checkbox" class="drugs1" name="drugs1">just light/moderate alcohol<br>
-                <input type="checkbox" class="drugs2" name="drugs2">moderate/heavy alcohol<br>
-                <input type="checkbox" class="drugs3" name="drugs3">weed<br>
-                <input type="checkbox" class="drugs4" name="drugs4">Adderall<br>
-                <input type="checkbox" class="drugs5" name="drugs5">a psychedelic<br>
-                <input type="text" class="drugs" name="drugs"><br><br>
-
-                <span style="text-decoration: underline">Was I manic today? (mindlessly working "for no reason")</span><br>
-                <input type="radio" class="manic" name="manic" value="yes">yes<br>
-                <input type="radio" class="manic" name="manic" value="somewhat">somewhat<br>
-                <input type="radio" class="manic" name="manic" value="no">no<br><br>
-
-                <span style="text-decoration: underline">Was I depressed today?</span><br>
-                <input type="radio" class="depressed" name="depressed" value="yes">yes<br>
-                <input type="radio" class="depressed" name="depressed" value="somewhat">somewhat<br>
-                <input type="radio" class="depressed" name="depressed" value="no">no<br><br>
-
-                <span style="text-decoration: underline">Did reality feel 'real' today?</span><br>
-                <input type="radio" class="realityreal" name="realityreal" value="yes">yes<br>
-                <input type="radio" class="realityreal" name="realityreal" value="somewhat">somewhat<br>
-                <input type="radio" class="realityreal" name="realityreal" value="no">no<br><br>
-
-                <span style="text-decoration: underline">Was I present & aware of my surroundings today?</span><br>
-                <input type="radio" class="feelpresent" name="feelpresent" value="yes">yes<br>
-                <input type="radio" class="feelpresent" name="feelpresent" value="somewhat">somewhat<br>
-                <input type="radio" class="feelpresent" name="feelpresent" value="no">no<br><br>
-
-                <span style="text-decoration: underline">Did things feel gray or kind of bright and clear today?</span><br>
-                <input type="radio" class="cloudiness" name="cloudiness" value="gray">gray & foggy<br>
-                <input type="radio" class="cloudiness" name="cloudiness" value="middle">middle<br>
-                <input type="radio" class="cloudiness" name="cloudiness" value="clear">clear<br><br>
 
                 <span style="text-decoration: underline">Did I go out tonight?</span><br>
                 <input type="radio" class="goout" name="goout" value="yes">yes<br>
@@ -366,7 +401,7 @@
                 Details, if interesting: <input type="text" class="dreamdetails" name="dreamdetails"><br><br>
 
                 <span style="text-decoration: underline">Hours spent on Radio:</span><br>
-                <input type="number" name="radio" min="0" max="24"><br><br>
+                <input type="number" class="radiohours" name="radio" min="0" max="24"><br><br>
 
                 <span style="text-decoration: underline">Took vitamins?</span><br>
                 <input type="radio" class="vitamins" name="vitamins" value="before4">yes, before 4pm<br>
@@ -475,13 +510,227 @@
      $('.submit').click(function(){
          form.date = $('.todaysdate').val();
          form.seroquel = $('.seroquel').val();
+         form.seroquelquantity = $('.seroquelquantity').val();
          form.intobedtime = $('.intobedtime').val();
          form.bedtime = $('.bedtime').val();
+         form.allnighter_yes = $('.allnighter_yes').val();
+         form.allnighter_nearly = $('.allnighter_nearly').val();
          form.wakeuptime = $('.wakeuptime').val();
+         form.wakeuptime_first = $('.wakeuptime_first').val();
          form.outofbedtime = $('.outofbedtime').val();
          form.cat = $('.cat').val();
-//         form.nightmood1_day = $('.nightmood1_day').val();
-//         form.nightmood2_day = $('.nightmood2_day').val();
+         form.napyesterday = $('.napyesterday').val();
+         form.napyesterdaydetails = $('.napyesterdaydetails').val();
+         form.naptoday = $('.naptoday').val();
+         form.naptodaydetails = $('.naptodaydetails').val();
+         form.wellbutrin = $('.wellbutrin').val();
+         form.wellbutrinforgot = $('.wellbutrinforgot').val();
+         form.wellbutrinhalf = $('.wellbutrinhalf').val();
+         form.wellbutrintwo = $('.wellbutrintwo').val();
+         form.wellbutrintwomaybe = $('.wellbutrintwomaybe').val();
+         form.friends = $('.friends').val();
+         form.friends2 = $('.friends2').val();
+         form.daydreaminess = $('.daydreaminess').val();
+         form.daymood1_day = $('.daymood1_day').val();
+         form.daymood2_day = $('.daymood2_day').val();
+         form.daymood3_day = $('.daymood3_day').val();
+         form.daymood4_day = $('.daymood4_day').val();
+         form.daymood5_day = $('.daymood5_day').val();
+         form.daymood6_day = $('.daymood6_day').val();
+         form.daymood7_day = $('.daymood7_day').val();
+         form.daymood8_day = $('.daymood8_day').val();
+         form.daymood9_day = $('.daymood9_day').val();
+         form.daymood10_day = $('.daymood10_day').val();
+         form.daymood11_day = $('.daymood11_day').val();
+         form.daymood12_day = $('.daymood12_day').val();
+         form.daymood13_day = $('.daymood13_day').val();
+         form.daymooddetails_day = $('.daymooddetails_day').val();
+         form.daymood1_week = $('.daymood1_week').val();
+         form.daymood2_week = $('.daymood2_week').val();
+         form.daymood3_week = $('.daymood3_week').val();
+         form.daymood4_week = $('.daymood4_week').val();
+         form.daymood5_week = $('.daymood5_week').val();
+         form.daymood6_week = $('.daymood6_week').val();
+         form.daymood7_week = $('.daymood7_week').val();
+         form.daymood8_life = $('.daymood8_week').val();
+         form.daymood9_week = $('.daymood9_week').val();
+         form.daymood10_week = $('.daymood10_week').val();
+         form.daymood11_week = $('.daymood11_week').val();
+         form.daymood12_week = $('.daymood12_week').val();
+         form.daymood13_week = $('.daymood13_week').val();
+         form.daymooddetails_week = $('.daymooddetails_week').val();
+         form.daymood1_life = $('.daymood1_life').val();
+         form.daymood2_life = $('.daymood2_life').val();
+         form.daymood3_life = $('.daymood3_life').val();
+         form.daymood4_life = $('.daymood4_life').val();
+         form.daymood5_life = $('.daymood5_life').val();
+         form.daymood6_life = $('.daymood6_life').val();
+         form.daymood7_life = $('.daymood7_life').val();
+         form.daymood8_life = $('.daymood8_life').val();
+         form.daymood9_life = $('.daymood9_life').val();
+         form.daymood10_life = $('.daymood10_life').val();
+         form.daymood11_life = $('.daymood11_life').val();
+         form.daymood12_life = $('.daymood12_life').val();
+         form.daymood13_life = $('.daymood13_life').val();
+         form.daymooddetails_life = $('.daymooddetails_life').val();
+         form.daydrugs1 = $('.daydrugs1').val();
+         form.daydrugs2 = $('.daydrugs2').val();
+         form.daydrugs3 = $('.daydrugs3').val();
+         form.daydrugs4 = $('.daydrugs4').val();
+         form.daydrugs = $('.daydrugs').val();
+         form.daymanic = $('.daymanic').val();
+         form.daydepressed = $('.daydepressed').val();
+         form.dayrealityreal = $('.dayrealityreal').val();
+         form.dayfeelpresent = $('.dayfeelpresent').val();
+         form.daycloudiness = $('.daycloudiness').val();
+         form.dayselfimage = $('.dayselfimage').val();
+         form.dayweight = $('.dayweight').val();
+         form.dayiate = $('.dayiate').val();
+         form.dayhealth = $('.dayhealth').val();
+         form.dayappetite = $('.dayappetite').val();
+         form.outfitday = $('.outfitday').val();
+         form.dayfoodnotes = $('.dayfoodnotes').val();
+         form.dayvegan1 = $('.dayvegan1').val();
+         form.dayvegan2 = $('.dayvegan2').val();
+         form.dayvegan3 = $('.dayvegan3').val();
+         form.daytummy_good = $('.daytummy_good').val();
+         form.daytummy_bad = $('.daytummy_bad').val();
+         form.nightdreaminess = $('.nightdreaminess').val();
+         form.nightmood1_day = $('.nightmood1_day').val();
+         form.nightmood2_day = $('.nightmood2_day').val();
+         form.nightmood3_day = $('.nightmood3_day').val();
+         form.nightmood4_day = $('.nightmood4_day').val();
+         form.nightmood5_day = $('.nightmood5_day').val();
+         form.nightmood6_day = $('.nightmood6_day').val();
+         form.nightmood7_day = $('.nightmood7_day').val();
+         form.nightmood8_day = $('.nightmood8_day').val();
+         form.nightmood9_day = $('.nightmood9_day').val();
+         form.nightmood10_day = $('.nightmood10_day').val();
+         form.nightmood11_day = $('.nightmood11_day').val();
+         form.nightmood12_day = $('.nightmood12_day').val();
+         form.nightmood13_day = $('.nightmood13_day').val();
+         form.nightmooddetails_day = $('.nightmooddetails_day').val();
+         form.nightmood1_week = $('.nightmood1_week').val();
+         form.nightmood2_week = $('.nightmood2_week').val();
+         form.nightmood3_week = $('.nightmood3_week').val();
+         form.nightmood4_week = $('.nightmood4_week').val();
+         form.nightmood5_week = $('.nightmood5_week').val();
+         form.nightmood6_week = $('.nightmood6_week').val();
+         form.nightmood7_week = $('.nightmood7_week').val();
+         form.nightmood8_life = $('.nightmood8_week').val();
+         form.nightmood9_week = $('.nightmood9_week').val();
+         form.nightmood10_week = $('.nightmood10_week').val();
+         form.nightmood11_week = $('.nightmood11_week').val();
+         form.nightmood12_week = $('.nightmood12_week').val();
+         form.nightmood13_week = $('.nightmood13_week').val();
+         form.nightmooddetails_week = $('.nightmooddetails_week').val();
+         form.nightmood1_life = $('.nightmood1_life').val();
+         form.nightmood2_life = $('.nightmood2_life').val();
+         form.nightmood3_life = $('.nightmood3_life').val();
+         form.nightmood4_life = $('.nightmood4_life').val();
+         form.nightmood5_life = $('.nightmood5_life').val();
+         form.nightmood6_life = $('.nightmood6_life').val();
+         form.nightmood7_life = $('.nightmood7_life').val();
+         form.nightmood8_life = $('.nightmood8_life').val();
+         form.nightmood9_life = $('.nightmood9_life').val();
+         form.nightmood10_life = $('.nightmood10_life').val();
+         form.nightmood11_life = $('.nightmood11_life').val();
+         form.nightmood12_life = $('.nightmood12_life').val();
+         form.nightmood13_life = $('.nightmood13_life').val();
+         form.nightmooddetails_life = $('.nightmooddetails_life').val();
+         form.nightdrugs1 = $('.nightdrugs1').val();
+         form.nightdrugs2 = $('.nightdrugs2').val();
+         form.nightdrugs3 = $('.nightdrugs3').val();
+         form.nightdrugs4 = $('.nightdrugs4').val();
+         form.nightdrugs = $('.nightdrugs').val();
+         form.nightmanic = $('.nightmanic').val();
+         form.nightdepressed = $('.nightdepressed').val();
+         form.nightrealityreal = $('.nightrealityreal').val();
+         form.nightfeelpresent = $('.nightfeelpresent').val();
+         form.nightcloudiness = $('.nightcloudiness').val();
+         form.nightselfimage = $('.nightselfimage').val();
+         form.nightweight = $('.nightweight').val();
+         form.nightiate = $('.nightiate').val();
+         form.nighthealth = $('.nighthealth').val();
+         form.nightappetite = $('.nightappetite').val();
+         form.outfitnight = $('.outfitnight').val();
+         form.nightfoodnotes = $('.nightfoodnotes').val();
+         form.nightvegan1 = $('.nightvegan1').val();
+         form.nightvegan2 = $('.nightvegan2').val();
+         form.nightvegan3 = $('.nightvegan3').val();
+         form.nighttummy_good = $('.nighttummy_good').val();
+         form.nighttummy_bad = $('.nighttummy_bad').val();
+         form.goout = $('.goout').val();
+         form.gooutdetails = $('.gooutdetails').val();
+         form.hungover = $('.hungover').val();
+         form.leavehouse = $('.leavehouse').val();
+         form.compulsionhours = $('.compulsionhours').val();
+         form.compulsions1 = $('.compulsions1').val();
+         form.compulsions2 = $('.compulsions2').val();
+         form.compulsions3 = $('.compulsions3').val();
+         form.compulsions4 = $('.compulsions4').val();
+         form.compulsions5 = $('.compulsions5').val();
+         form.othercompulsions = $('.othercompulsions').val();
+         form.stressors1 = $('.stressors1').val();
+         form.stressors2 = $('.stressors2').val();
+         form.stressors3 = $('.stressors3').val();
+         form.stressors4 = $('.stressors4').val();
+         form.stressors5 = $('.stressors5').val();
+         form.stressors6 = $('.stressors6').val();
+         form.stressors7 = $('.stressors7').val();
+         form.stressors8 = $('.stressors8').val();
+         form.otherstressors = $('.otherstressors').val();
+         form.stresslevel_c = $('.stresslevel_c').val();
+         form.stresslevel_uc = $('.stresslevel_uc').val();
+         form.money1 = $('.money1').val();
+         form.money2 = $('.money2').val();
+         form.money3 = $('.money3').val();
+         form.money4 = $('.money4').val();
+         form.money5 = $('.money5').val();
+         form.money6 = $('.money6').val();
+         form.money7 = $('.money7').val();
+         form.moneydetails = $('.moneydetails').val();
+         form.exercise1 = $('.exercise1').val();
+         form.exercise2 = $('.exercise2').val();
+         form.exercise3 = $('.exercise3').val();
+         form.exercise4 = $('.exercise4').val();
+         form.exercise5 = $('.exercise5').val();
+         form.exercise6 = $('.exercise6').val();
+//         form.productivity = $('.productivity').val();
+         form.dreams1 = $('.dreams1').val();
+         form.dreams2 = $('.dreams2').val();
+         form.dreams3 = $('.dreams3').val();
+         form.dreamdetails = $('.dreamdetails').val();
+         form.radiohours = $('.radiohours').val();
+         form.vitamins = $('.vitamins').val();
+         form.phonescreentime = $('.phonescreentime').val();
+         form.laptopscreentime = $('.laptopscreentime').val();
+         form.entertainmentscreentime = $('.entertainmentscreentime').val(); // which watched?
+         form.couch = $('.couch').val();
+         form.nostalgia1 = $('.nostalgia1').val();
+         form.nostalgia2 = $('.nostalgia2').val();
+         form.nostalgia3 = $('.nostalgia3').val();
+         form.nostalgiadetails = $('.nostalgiadetails').val();
+         form.tracing = $('.tracing').val();
+         form.conversations1 = $('.conversations1').val();
+         form.conversations2 = $('.conversations2').val();
+         form.conversations3 = $('.conversations3').val();
+         form.conversations4 = $('.conversations4').val();
+         form.conversations5 = $('.conversations5').val();
+         form.conversations6 = $('.conversations6').val();
+         form.conversationsdetails = $('.conversationdetails').val();
+         form.meditating = $('.meditating').val();
+         form.learn = $('.learn').val();
+         form.blushing = $('.blushing').val();
+         form.aesthetic = $('.aesthetic').val();
+         form.measurement = $('.measurement').val();
+         form.creativity = $('.creativity').val();
+         form.goals1 = $('.goals1').val();
+         form.goals2 = $('.goals2').val();
+         form.goals3 = $('.goals3').val();
+         form.cuteness = $('.cuteness').val();
+         form.anythingelse = $('.anythingelse').val();
+
          console.log(form);
          writeDateData(form);
      } )
@@ -514,6 +763,17 @@ allow read, write;
             The One <input type="text" class="" name="friends"><br>
             (or if two, The One <input type="text" name="friends2">)<br><br>
 -->
+ <!--         form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val();
+          form. = $('.').val(); -->
+
 
 </body>
 </html>
