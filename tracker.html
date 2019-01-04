@@ -8,7 +8,7 @@
     <!-- Bootstrap
     <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,57 +17,73 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
     <!-- [endif]-->
 </head>
-<body span style="background-color:floralwhite">
+<body>
 
- <div id="content" style="display:block" style="color:darkslategrey">
-    <span id="words" style="margin-left: 0%">
+ <div id="content">
 <!--        <fieldset style="font-family:'Bodoni 72'"> -->
-            <span style="margin-left: 3%">
-        <h1 span style="color:darkslategrey">TRACKER</h1>
-        <form span style="color:darkslategrey" action="trackerdatacollection.php" method="POST">
-        <span style="background-color: floralwhite">
-            <span style="font-family:'Bodoni 72'">
+        <h1>TRACKER</h1>
+        <form action="trackerdatacollection.php" method="POST">
             <fieldset>
             <span style="font-weight: bold"><br>BASICS</span><br><br>
 
                 <span style="text-decoration: underline">Date:</span><br>
             <input type="date" class="todaysdate" name="todaysdate" required><br><br>
 
-                <span style="text-decoration: underline">Took Seroquel last night at:</span><br>
-            <input type="time" class="seroquel" name="seroquel"><br>
-                <input type="number" class="seroquelquantity" name="seroquelquantity" min="0" step="any" required> quantity of 50mg pills <br>
-                <span style="text-decoration: underline">Got into bed at:</span><br>
+<button class="accordion">Medications</button>
+<div class="panel">
+    <p>
+        <span style="text-decoration: underline">Took Seroquel last night at:</span><br>
+        <input type="time" class="seroquel" name="seroquel"><br>
+        <input type="number" class="seroquelquantity" name="seroquelquantity" min="0" step="any" required> quantity of 50mg pills <br><br>
+        <span style="text-decoration: underline">Took Wellbutrin & Abilify at:</span><br>
+        <input type="time" class="wellbutrin" name="wellbutrin"><br>
+        <input type="checkbox" class="wellbutrinforgot" name="wellbutrinforgot">shit, I forgot<br>
+        <input type="checkbox" class="wellbutrinhalf" name="wellbutrinhalf">took half<br>
+        <input type="checkbox" class="wellbutrintwo" name="wellbutrintwo">took two on accident, at <input type="time" class="wellbutrintwotime" name="wellbutrintwotime"><br>
+        <input type="checkbox" class="wellbutrintwomaybe" name="wellbutrintwomaybe">afraid I took two but can't remember<br><br>
+        <span style="text-decoration: underline">Took vitamins?</span><br>
+        <input type="radio" class="vitamins" name="vitamins" value="before4">yes, before 4pm<br>
+        <input type="radio" class="vitamins" name="vitamins" value="after4">yes, after 4pm<br>
+        <input type="radio" class="vitamins" name="vitamins" value="no">not today oops<br>
+    </p></div>
+
+                <button class="accordion">Sleep</button>
+                <div class="panel">
+                    <p>
+                    <span style="text-decoration: underline">Got into bed at:</span><br>
             <input type="time" class="intobedtime" name="intobedtime"><br>
-                <span style="text-decoration: underline">Went to sleep at:</span><br>
+        <span style="text-decoration: underline">Went to sleep at:</span><br>
             <input type="time" class="bedtime" name="bedtime"><br>
             ...or did I stay up all night?<br>
             <input type="checkbox" class="allnighter_yes" name="allnighter_yes">yes<br>
             <input type="checkbox" class="allnighter_nearly" name="allnighter_nearly">nearly<br><br>
-                <span style="text-decoration: underline">Woke up at:</span><br>
+        <span style="text-decoration: underline">Woke up at:</span><br>
             <input type="time" class="wakeuptime" name="wakeuptime"><br>
-                <span style="text-decoration: underline">If I woke up before that and was up a little, when?</span><br>
+        <span style="text-decoration: underline">If I woke up before that and was up a little, when?</span><br>
                 <input type="time" class="wakeuptime_first" name="wakeuptime_first"><br>
-                <span style="text-decoration: underline">Got out of bed at:</span><br>
+        <span style="text-decoration: underline">Got out of bed at:</span><br>
             <input type="time" class="outofbedtime" name="outofbedtime"><br>
-            ...did I linger in bed because of the cat?<br>
-            <input type="checkbox" class="cat" name="cat">...yes<br><br>
-                <span style="text-decoration: underline">Naps?<br></span>
+        <span style="text-decoration: underline">Naps?<br></span>
             <input type="checkbox" class="napyesterday" name="napyesterday"> yesterday (if so, length, time, etc: <input type="text" class="napyesterdaydetails" name="napyesterdaydetails">)<br>
-            <input type="checkbox" class="naptoday" name="naptoday">today (if so, length, time, etc: <input type="text" class="naptodaydetails" name="naptodaydetails">)<br><br>
+            <input type="checkbox" class="naptoday" name="naptoday">today (if so, length, time, etc: <input type="text" class="naptodaydetails" name="naptodaydetails">)<br>
 
-                <span style="text-decoration: underline">Took Wellbutrin at:</span><br>
-            <input type="time" class="wellbutrin" name="wellbutrin"><br>
-            <input type="checkbox" class="wellbutrinforgot" name="wellbutrinforgot">shit, I forgot<br>
-            <input type="checkbox" class="wellbutrinhalf" name="wellbutrinhalf">took half<br>
-            <input type="checkbox" class="wellbutrintwo" name="wellbutrintwo">took two on accident, at <input type="time" class="wellbutrintwotime" name="wellbutrintwotime"><br>
-            <input type="checkbox" class="wellbutrintwomaybe" name="wellbutrintwomaybe">afraid I took two but can't remember<br><br>
+    </p>
+</div>
 
-            <span style="text-decoration: underline">If this was an episode of Friends, it would be called...</span><br>
-            The One <input type="text" class="friends" name="friends" required><br>
-            (or if two, The One <input type="text" class="friends2" name="friends2">)<br>
+                <button class="accordion">Today's Title</button>
+                <div class="panel">
+                    <p>
+                    <span style="text-decoration: underline">If this was an episode of Friends, it would be called...</span><br>
+                    The One <input type="text" class="friends" name="friends" required><br>
+                    (or if two, The One <input type="text" class="friends2" name="friends2">)<br>
+                    </p>
+                </div>
             </fieldset><fieldset>
             <br><span style="font-weight: bold">DAY RECORD</span><br><br>
 
+            <button class="accordion">Day Mind</button>
+            <div class="panel">
+                <p>
             <span style="text-decoration: underline">Overall day dreaminess, on a scale from 1 to 10:</span><br>
             <input type="number" class="daydreaminess" name="daydreaminess" min="1" max="11"><br><br>
 
@@ -154,7 +170,12 @@
                 <input type="radio" class="daycloudiness" name="daycloudiness" value="gray">gray & foggy<br>
                 <input type="radio" class="daycloudiness" name="daycloudiness" value="middle">middle<br>
                 <input type="radio" class="daycloudiness" name="daycloudiness" value="clear">clear<br><br>
+                </p>
+            </div>
 
+            <button class="accordion">Day Body</button>
+            <div class="panel">
+                <p>
             <span style="text-decoration: underline">Day self-image:</span><br>
             <input type="radio" class="dayselfimage" name="dayselfimage" value="hot">feelin' hot as hell tbh <3<br>
             <input type="radio" class="dayselfimage" name="dayselfimage" value="pretty">feelin' pretty :~)<br>
@@ -198,10 +219,15 @@
             <input type="checkbox" class="dayvegan3" name="dayvegan3" value="broke">...broke veganism<br>
             <input type="checkbox" class="daytummy_good" name="daytummy_good" value="notroubles">no tummy troubles<br>
             <input type="checkbox" class="daytummy_bad" name="daytummy_bad" value="troubles">tummy troubles<br>
+                </p>
+            </div>
 
             </fieldset><fieldset>
             <br><span style="font-weight: bold">NIGHT RECORD</span><br><br>
 
+            <button class="accordion">Night Mind</button>
+            <div class="panel">
+                <p>
             <span style="text-decoration: underline">Overall night dreaminess, on a scale from 1 to 10:</span><br>
             <input type="number" class="nightdreaminess" name="nightdreaminess" min="1" max="11"><br><br>
 
@@ -288,7 +314,12 @@
                 <input type="radio" class="nightcloudiness" name="nightcloudiness" value="gray">gray & foggy<br>
                 <input type="radio" class="nightcloudiness" name="nightcloudiness" value="middle">middle<br>
                 <input type="radio" class="nightcloudiness" name="nightcloudiness" value="clear">clear<br><br>
+                </p>
+            </div>
 
+            <button class="accordion">Night Body</button>
+            <div class="panel">
+                <p>
             <span style="text-decoration: underline">Night self-image:</span><br>
             <input type="radio" class="nightselfimage" name="nightselfimage" value="hot">feelin' hot as hell tbh <3<br>
             <input type="radio" class="nightselfimage" name="nightselfimage" value="pretty">feelin' pretty :~)<br>
@@ -332,10 +363,32 @@
             <input type="checkbox" class="nightvegan3" name="nightvegan3" value="broke">...broke veganism<br>
             <input type="checkbox" class="nighttummy_good" name="nighttummy4" value="notroubles">no tummy troubles<br>
             <input type="checkbox" class="nighttummy_bad" name="nighttummy5" value="troubles">tummy troubles<br>
+                </p>
+            </div>
 
                 </fieldset><fieldset>
                 <br><span style="font-weight: bold">PATTERN SEARCHING: CORE</span><br><br>
 
+            <button class="accordion">School</button>
+            <div class="panel">
+                <p>
+                    <span style="text-decoration: underline">Did I go to class today?</span><br>
+                    <input type="radio" class="attendance" name="attendance" value="yes">yes! all<br>
+                    <input type="radio" class="attendance" name="attendance" value="some">yes, some<br>
+                    <input type="radio" class="attendance" name="attendance" value="no">no... :~(<br><br>
+
+                    <span style="text-decoration: underline">How am I feeling about school?</span><br>
+                    <input type="checkbox" class=school" name=school" value="amazing">amazing, I'm a queen bitch who got this shit on lock<br>
+                    <input type="checkbox" class=school" name=school" value="good">feeling good<br>
+                    <input type="checkbox" class=school" name=school" value="stressedbutokay">stressed about tests/projects/etc but okay<br>
+                    <input type="checkbox" class=school" name=school" value="stressed">just... stressed, bad stressed<br>
+                    <input type="checkbox" class=school" name=school" value="yes">terrified<br><br>
+                </p>
+            </div>
+
+            <button class="accordion">Going Out</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Did I go out tonight?</span><br>
                 <input type="radio" class="goout" name="goout" value="yes">yes<br>
                 <input type="radio" class="goout" name="goout" value="somewhat">somewhat<br>
@@ -351,7 +404,12 @@
                 <span style="text-decoration: underline">Did I leave the house today?</span><br>
                 <input type="radio" class="leavehouse" name="leavehouse" value="yes">yes<br>
                 <input type="radio" class="leavehouse" name="leavehouse" value="yes">nope...<br><br>
+                </p>
+            </div>
 
+            <button class="accordion">Stress & Compulsions</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Hours spent on compulsions:</span><br>
                 <input type="number" class="compulsionhours" name="compulsionhours" min="0" max="24"><br><br>
 
@@ -375,7 +433,12 @@
                 <input type="text" class="otherstressors" name="otherstressors"><br>
                 Conscious stress level from 1 to 10: <input type="number" name="stresslevel_c" min="0" max="11"><br>
                 Unconscious sensed stress level from 1 to 10: <input type="number" name="stresslevel_uc" min="0" max="11"><br><br>
+                </p>
+            </div>
 
+            <button class="accordion">Money</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Money spent:</span><br>
                 <input type="checkbox" class="money1" name="money1" value="none">none<br>
                 <input type="checkbox" class="money2" name="money2" value="alittle">a little... like <$15-20<br>
@@ -385,7 +448,11 @@
                 <input type="checkbox" class="money6" name="money6" value="matters">on non-essentials...<br>
                 <input type="checkbox" class="money7" name="money7" value="depop">small victory, I made money on Depop<br>
                 <input type="text" name="moneydetails"><br><br>
+                </p></div>
 
+            <button class="accordion">Yoga & Exercise</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Exercise?</span><br>
                 <input type="checkbox" class="exercise1" name="exercise1" value="run">went for a run!<br>
                 <input type="checkbox" class="exercise2" name="exercise2" value="littlestretch">stretched a little<br>
@@ -394,46 +461,73 @@
                 <input type="checkbox" class="exercise5" name="exercise5" value="laundry">did something else laborious like laundry or cleaning<br>
                 <input type="checkbox" class="exercise6" name="exercise6" value="nada">...nada<br><br>
 
-                <span style="text-decoration: underline">Productivity, on a scale from 1 to 10:</span><br>
-                <input type="number" class="productivity" name="productivity" min="0" max="10"><br><br>
+            <span style="text-decoration: underline">Hours spent on the couch:</span><br>
+            <input type="number" class="couch" name="couch" min="0" max="24"><br><br>
+                </p></div>
+
+            <button class="accordion">Productivity</button>
+                    <div class="panel">
+                <p>
+                    <span style="text-decoration: underline">Productivity</span>, on a scale from 1 to 10:
+                    <input type="number" class="productivity" name="productivity" min="0" max="10"><br>
+                    Things I got done today:
+                    <input type="text" class="productivity" name="productivity"><br>
+                    Hours spent productively: <input type="number" class="productivityhours" name="productivityhours" min="0" max="24"><br><br>
+                </p></div>
+            <br><br>
 
                 </fieldset><fieldset>
                 <span style="font-weight: bold">••• PATTERN SEARCHING: MORE, IF I'M UP TO IT •••</span><br><br>
-
+            <button class="accordion">Dreams</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Did I dream last night?</span><br>
                 <input type="checkbox" class="dreams1" name="dreams1" value="yes">yes<br>
                 <input type="checkbox" class="dreams2" name="dreams2" value="no">no<br>
                 <input type="checkbox" class="dreams3" name="dreams3" value="cantremember">can't remember<br>
                 Details, if interesting: <input type="text" class="dreamdetails" name="dreamdetails"><br><br>
+                </p>
+            </div>
 
-                <span style="text-decoration: underline">Hours spent on Radio:</span><br>
+            <button class="accordion">Radio</button>
+            <div class="panel">
+                <p>
+            <span style="text-decoration: underline">Hours spent on Radio:</span><br>
                 <input type="number" class="radiohours" name="radio" min="0" max="24"><br><br>
+                </p>
+            </div>
 
-                <span style="text-decoration: underline">Took vitamins?</span><br>
-                <input type="radio" class="vitamins" name="vitamins" value="before4">yes, before 4pm<br>
-                <input type="radio" class="vitamins" name="vitamins" value="after4">yes, after 4pm<br>
-                <input type="radio" class="vitamins" name="vitamins" value="no">not today oops<br><br>
-
+            <button class="accordion">Screen Time</button>
+            <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Hours of screen time:</span><br>
                 Phone (from Moment): <input type="number" name="phonescreentime" min="0" max="24"><br>
                 Laptop (estimated): <input type="number" name="laptopscreentime" min="0" max="24"><br>
                 Hours spent watching entertainment media: <input type="number" name="entertainmentscreentime" min="0" max="24"><br><br>
-
-                <span style="text-decoration: underline">Hours spent on the couch:</span><br>
-                <input type="number" class="couch" name="couch" min="0" max="24"><br><br>
-
+                </p></div>
+                    <button class="accordion">Nostalgia</button>
+                    <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Extra strong nostalgia? like a weird fixation on my past/childhood?</span><br>
                 <input type="checkbox" class="nostalgia1" name="nostalgia1" value="yes">yes<br>
                 <input type="checkbox" class="nostalgia2" name="nostalgia2" value="no">nah, not today<br>
                 <input type="checkbox" class="nostalgia3" name="nostalgia3" value="pushed">I pushed those thoughts away<br>
                 <input type="text" class="nostalgiadetails" name="nostalgiadetails"><br><br>
+            </p></div>
 
+                <button class="accordion">Tracing Words</button>
+                <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Tracing words with my fingers?:</span><br>
                 <input type="radio" class="tracing" name="tracing" value="alot">a lot<br>
                 <input type="radio" class="tracing" name="tracing" value="alittle">a little<br>
                 <input type="radio" class="tracing" name="tracing" value="no">not today<br><br>
+            </p></div>
 
-                <span style="text-decoration: underline">Who did I have meaningful interactions/conversations with?:</span><br>
+                <button class="accordion">Meaningful Conversations</button>
+                <div class="panel">
+                <p>
+                    <span style="text-decoration: underline">Who did I have meaningful interactions/conversations with?:</span><br>
                 <input type="checkbox" class="conversations1" name="conversations1" value="grandparents">grandparents<br>
                 <input type="checkbox" class="conversations2" name="conversations2" value="parents">my parents<br>
                 <input type="checkbox" class="conversations3" name="conversations3" value="mother">my mother<br>
@@ -441,55 +535,185 @@
                 <input type="checkbox" class="conversations5" name="conversations5" value="uclapeer">an acquaintance or new friend<br>
                 <input type="checkbox" class="conversations6" name="conversations6" value="ex">an ex<br>
                 <input type="text" class="conversationdetails" name="conversationsdetails"><br><br>
+            </p></div>
 
+                <button class="accordion">Meditation</button>
+                <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Minutes spent meditating:</span><br>
                 <input type="number" class="meditating" name="meditating" min="0" max="1440"><br><br>
+            </p></div>
 
+                <button class="accordion">Things Learned</button>
+                <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Did I learn anything interesting today? academic, Internet rabbit hole, personal, etc?</span><br>
                 <input type="text" class="learn" name="learn"><br><br>
+            </p></div>
 
-                <span style="text-decoration: underline">Productivity, things I got done today:</span><br>
-                <input type="text" class="productivity" name="productivity"><br>
-                Hours spent productively: <input type="number" class="productivityhours" name="productivityhours" min="0" max="24"><br><br>
-
+                <button class="accordion">Blushing</button>
+                <div class="panel">
+                <p>
                 <span style="text-decoration: underline">Did I blush?:</span><br>
                 <input type="radio" class="blushing" name="blushing" value="yes">yes, without alcohol<br>
                 <input type="radio" class="blushing" name="blushing" value="alcohol">yes, because of alcohol<br>
                 <input type="radio" class="blushing" name="blushing" value="mildly">mildly?<br>
                 <input type="radio" class="blushing" name="blushing" value="no">no<br><br>
+            </p></div>
 
+                <button class="accordion">Aesthetic</button>
+                <div class="panel">
+                <p>
                 <span style="text-decoration: underline">An aesthetic/m00d for the day:</span><br>
                 <input type="text" class="aesthetic" name="aesthetic"><br><br>
+            </p></div>
 
+                <button class="accordion">Body Measurements</button>
+                <div class="panel">
+                <p>
             <span style="text-decoration: underline">If I recorded my waist measurement or weight:</span><br>
             <input type="text" class="measurement" name="measurement"><br><br>
+            </p></div>
 
+                <button class="accordion">Creativity</button>
+                <div class="panel">
+                <p>
             <span style="text-decoration: underline">Did I come up with anything creative? Ideas, poetry?</span><br>
             <input type="text" class="creativity" name="creativity"><br><br>
+            </p></div>
 
+                <button class="accordion">Goals</button>
+                <div class="panel">
+                <p>
             <span style="text-decoration: underline">Goals:</span><br>
             For tomorrow?<input type="text" class="goals1" name="goals1"><br>
             For this week?<input type="text" class="goals2" name="goals2"><br>
             For my life?<input type="text" class="goals3" name="goals3"><br><br>
+            </p></div>
 
+                <button class="accordion">Positivity</button>
+                <div class="panel">
+                <p>
             <span style="text-decoration: underline">Something positive to take away, some self love or optimism:</span><br>
             <input type="text" class="cuteness" name="cuteness"><br><br>
+            </p></div>
 
+                <button class="accordion">Anything Else</button>
+                <div class="panel">
+                <p>
             <span style="text-decoration: underline">Anything else??</span><br>
-            <input type="text" name="anythingelse"><br><br><br>
+            <input type="text" name="anythingelse"><br><br>
+            </p></div>
 
-            ♡♡♡ CARPE DIEM! CARPE NOCTEM! ♡♡♡<br><br>
+            <br><br>♡♡♡ CARPE DIEM! CARPE NOCTEM! ♡♡♡<br><br>
 
 <!-- Would be cool to add an "expand/show" section that has posted goals, day/week/life, and a little X by each that would remove them -->
             <input type="submit" class="submit" value="Submit">
             <input type="reset"></fieldset>
-            </span></span></form>
-    </span></span>
+            </form>
 </div>
 
  <!-- Another way of text input: <textarea class="_ta" name="_ta"></textarea><br> -->
 
- // jQuery (necessary for Bootstrap's JavaScript plugins)
+ <style>
+     body {
+         font-family: 'Pontano Sans', sans-serif;
+         margin-left: 6%;
+         margin-right: 6%;
+         display: block;
+         color: darkslategrey;
+         background-color: lavender;
+     }
+
+     /* ACCORDION */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+ background-color: lavenderblush;
+ color: #444;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ text-align: left;
+ border: none;
+ outline: none;
+     font-family: 'Pontano Sans', sans-serif;
+ font-size: medium;
+ transition: 0.4s;
+ }
+
+ /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ .active, .accordion:hover {
+ background-color: lightgreen;
+ }
+
+ /* Style the accordion panel. Note: hidden by default */
+ .panel {
+ padding: 0 18px;
+ background-color: white;
+ display: none;
+ overflow: hidden;
+
+ max-height: 0;
+ transition: max-height 0.2s ease-out;
+ }
+
+ .accordion:after {
+ content: '\02795'; /* Unicode character for "plus" sign (+) */
+ font-size: 13px;
+ color: #777;
+ float: right;
+ margin-left: 5px;
+ }
+
+ .active:after {
+ content: "";
+ /* Unicode character for "minus" sign (-) = \2796 */
+ }
+ </style>
+
+
+ <script>
+     var acc = document.getElementsByClassName("accordion");
+     var i;
+
+     for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+             /* Toggle between adding and removing the "active" class,
+             to highlight the button that controls the panel */
+             this.classList.toggle("active");
+
+             /* Toggle between hiding and showing the active panel */
+             var panel = this.nextElementSibling;
+             if (panel.style.display === "block") {
+                 panel.style.display = "none";
+             } else {
+                 panel.style.display = "block";
+             }
+         });
+     }
+ </script>
+
+ <script>
+     var acc = document.getElementsByClassName("accordion");
+     var i;
+
+     for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.maxHeight){
+                 panel.style.maxHeight = null;
+             } else {
+                 panel.style.maxHeight = panel.scrollHeight + "px";
+             }
+         });
+     }
+ </script>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- // Include all compiled plugins (below), or include individual files as needed
 <script src="js/bootstrap.min.js"></script> -->
@@ -524,7 +748,6 @@
          form.wakeuptime = $('.wakeuptime').val();
          form.wakeuptime_first = $('.wakeuptime_first').val();
          form.outofbedtime = $('.outofbedtime').val();
-         form.cat = $('.cat').val();
          form.napyesterday = $('.napyesterday').val();
          form.napyesterdaydetails = $('.napyesterdaydetails').val();
          form.naptoday = $('.naptoday').val();
@@ -672,6 +895,8 @@
          form.nightvegan3 = $('.nightvegan3').val();
          form.nighttummy_good = $('.nighttummy_good').val();
          form.nighttummy_bad = $('.nighttummy_bad').val();
+         form.attendance = $('.attendance').val();
+         form.school = $('.school').val();
          form.goout = $('.goout').val();
          form.gooutdetails = $('.gooutdetails').val();
          form.hungover = $('.hungover').val();
