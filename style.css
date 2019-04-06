@@ -7,6 +7,7 @@ body {
     font-family: 'VT323', monospace;
 /*    text-align: left; */
     margin-left: 15%;
+    margin-right: 15%;
 /*    display: inline-block; */
     padding-top: 3%;
 }
@@ -18,6 +19,11 @@ h1 {
 a {
     color: white;
     target: "_blank";
+    style: "text-decoration:none"
+}
+
+table {
+    color: white;
     style: "text-decoration:none"
 }
 
@@ -39,7 +45,7 @@ a {
     overflow-wrap: break-word;
 }
 
-#about {
+#lengthy {
     color: lawngreen;
     style: "text-decoration:none";
 }
