@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello! ~ AH</title>
+    <link rel="icon" href="icon.png">
+
+    <!-- Bootstrap
+    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    <!-- [endif]-->
+<body>
+<div id="content">
+    <div id="gif"><img src="boy-harsher-3.gif" alt=":~)"></div>
+    <div id="words" style="display:block">
+        <h2><a href="index.html" style="text-decoration:none"><---</a> back to my main site</h2>
+        <h2><span style="color:turquoise">Ashley Hoffmann</span> // see my <a href="https://docs.google.com/document/d/1plsZnk6QWOJyGcrbUwE0QYgxe4mFx7-zRzfvj8NE_30/edit?usp=sharing" target="_blank" style="text-decoration:none">resumé</a> and <a href="https://docs.google.com/document/d/1L-hLUIv-b_CbLb7_xHfJEG8iiF_lYegAtpNRNOUfFpw/edit?usp=sharing" style="text-decoration:none">cover letter</a> for more details<br></h2>
+        <div id="lengthy">
+            <h1 style="color:darkorange">Hello Alternate Thursdays! Thank you for visiting my site :~)</h1>
+
+            <h2 style="color:deeppink">Writing Samples:</h2>
+            <h3><span style="color: lawngreen"><a href="http://blog.uclaradio.com/post/174392226441/interview-with-stonefield" style="text-decoration: none">Here</a> is an interview I conducted with the band Stonefield for UCLA Radio;<br></h3>
+                 <h3>& <a href="http://blog.uclaradio.com/post/167436195687/alvvays-the-roxy-102317-show-review" style="text-decoration: none">here</a> is an Alvvays concert review.</span><br></h3>
+            <h2 style="color:deeppink">More Interview Samples & Audio Editing:</h2>
+            <h3><a href="https://ashleyhoffmann.github.io/personal-website/smells_shana.html" style="text-decoration: none">Here</a> is an interview I conducted with a psychic for my old UCLA Radio show "Smells Like Teen Spirituality."<br></h3>
+            <h3>& <a href="https://soundcloud.com/gophish/interview-with-dr-diana-ascher" style="text-decoration: none">here</a> is a more professional interview I conducted with Dr. Diana Ascher. I also have edited all the audio on this Soundcloud.<br></h3>
+            <h3>& <a href="https://soundcloud.com/smelzliketeenspirituality" style="text-decoration: none">here</a> is more audio I edited.<br></h3>
+
+                <h2 style="color:deeppink">Other Skills:</h2>
+             <h3>~ Digital art <a href="art.html" style="text-decoration:none">(here)</a><br>
+                    ~ Web development <a href="websites.html" style="text-decoration:none">(here)</a><br>
+                    ~ DSLR photography <a href="photography.html" target="_blank" style="text-decoration:none">(here)</a><br>
+                    ~ Science things (I'm a Climate Science major who entered college an engineer)</h3>
+            <!-- ~ <a href="http://ashleyhoffmann.tumblr.com/" target="_blank" style="text-decoration:none">Python (pandas, numpy, matplotlib, Jupyter Notebook)</a></h3> -->
+
+            <h1 style="color:darkorange">Thank you again! Hope to hear from you. :<)<br></h1>
+            <!--                    ~ <a href="art.html" style="text-decoration:none">geographic information systems</a></h3> -->
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed
+<script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
