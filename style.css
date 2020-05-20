@@ -1,51 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-/*    background-color: #cadfff;
-    font-family: 'Pontano Sans', sans-serif;
-    color: #525765; */
-    background-color: #000000;
-    color: #011efe;
-    font-family: 'VT323', monospace;
-/*    text-align: left; */
-    margin-left: 15%;
-    margin-right: 15%;
-/*    display: inline-block; */
-    padding-top: 3%;
+  font-family: 'Arimo', sans-serif;
+  background-color: #f7faf9;
+  color: #573d2e;
 }
 
-h1 {
-    font-size: xx-large;
+.column-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
 }
 
-a {
-    color: white;
-    target: "_blank";
-    style: "text-decoration:none"
+.column {
+  display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
-table {
-    color: white;
-    style: "text-decoration:none"
+.left {
+  width: 36%;
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-#content {
-    height: 66%;
-    font-size: 120%;
+.right {
+  width: 64%;
+  padding-left: 39px;
 }
 
-#gif {
-    float: left;
-    width: 3%;
-    height: 66%;
-    padding-right: 6%;
-    border: 0;
+.title {
+  width: 100%;
+  color: #573d2e;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#words {
-/*    float: right; */
-    overflow-wrap: break-word;
+.back {
+  width: 100%;
+  color: #573d2e;
+  text-align: center;
+  vertical-align: middle;
 }
 
-#lengthy {
-    color: lawngreen;
-    style: "text-decoration:none";
+.links {
+  color: #84baad;
+  text-decoration: none;
+}
+
+.about-header {
+  color: #ba616e;
+}
+
+.about-links {
+  color: #84baad;
+}
+
+.about-info {
+  color: gray;
+  font-size: 16px;
+}
+
+.writing {
+  color: #84baad;
+  font-weight: bolder;
+}
+
+.mbti-header {
+  color: #573d2e;
+}
+
+.mbti-info {
+  color: #84baad;
+  font-weight: bolder;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f7faf9;
+  padding: 10px;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  width: 96%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 666px) {
+  .column {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #f7faf9;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-weight: bolder;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: underline;
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7faf9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  font-weight: bolder;
+  color: #84baad;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
