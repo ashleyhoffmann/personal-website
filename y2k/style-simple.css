@@ -1,0 +1,50 @@
+body {
+    /*    background-color: #cadfff;
+        font-family: 'Pontano Sans', sans-serif;
+        color: #525765; */
+    background-color: floralwhite;
+    color: black;
+    font-family: 'Libre Franklin', sans-serif;
+    /*    text-align: left; */
+    margin-left: 15%;
+    margin-right: 15%;
+    /*    display: inline-block; */
+    padding-top: 3%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+a {
+    color: blue;
+    target: "_blank";
+}
+
+table {
+    color: white;
+    style: "text-decoration:none"
+}
+
+#content {
+    height: 66%;
+    font-size: 120%;
+}
+
+#gif {
+    float: left;
+    width: 3%;
+    height: 66%;
+    padding-right: 6%;
+    border: 0;
+}
+
+#words {
+    /*    float: right; */
+    overflow-wrap: break-word;
+}
+
+#lengthy {
+    color: lawngreen;
+    style: "text-decoration:none";
+}

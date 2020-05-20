@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mbti ~ AH</title>
+    <link rel="icon" href="tracker_heart.png">
+
+    <!-- Bootstrap
+    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    <!-- [endif]-->
+</head>
+<body span style="background-color: white;">
+
+<div id="content" style="display:block" style="color:darkslategrey">
+    <span id="words" style="margin-left: 0%">
+<!--        <fieldset style="font-family:'Bodoni 72'"> -->
+            <span style="margin-left: 3%">
+                <h1 span style="color:darkslategrey"><span style="font-family: 'Gurmukhi MN'">Unofficial Straightforward 15-Question Myers Briggs Test</span></h1>
+        <form span style="color:darkslategrey" action="trackerdatacollection.php" method="POST">
+        <span style="background-color: white">
+            <span style="font-family: 'Gurmukhi MN'">
+            <fieldset>
+                <span style="font-weight: bold"><span style="font-size: larger">PRE-QUESTIONS</span></span><br><br>
+
+                Today's Date: <input type="date" class="todaysdate" name="todaysdate" required><br>
+                Your name: <input type="text" class="name" name="name" required><br>
+                Going into this, what type do you think you are? (if you know): <input type="text" class="type" name="type"><br><br>
+
+                <span style="font-size: smaller"><span style="font-style: italic"><span style="font-weight: bold">IMPORTANT NOTE:</span></span>
+                <br>Myers Briggs will not put you in one tiny, limited box!
+                Introverts have times where they're extroverted; "thinkers" and "feelers" both think and feel (obviously!).
+                    Just go for what is <span style="font-style: italic">most commonly</span> you, not the "but soooometimes I'm ___!"
+                    <span style="font-weight: bold">We're ALL "sometimes ___."</span> Humans are dynamic!
+                    (Really, Myers Briggs says everyone can do anything and can act any way, think of it as just <span style="font-weight: bold">natural tendencies</span>.)
+
+                </span>
+
+
+                <br><br><span style="font-weight: bold"><span style="font-size: larger">QUESTIONS</span></span>
+
+                <br><br><span style="font-weight: bold">// PART 1 OF 3 //</span><br><br>
+
+            There are four interaction styles.<br>
+                <br><span style="color:red">STRUCTURE: Extroverted (which doesn't always mean peppy social butterfly), the kind who naturally takes charge, arguably dominating, in control, initiating, powerful, wants to take the reins. Direct, initiating, control.</span>
+                <br><span style="color:darkorange">STARTER: Extroverted, a starter, spontaneous, boisterous, energetic about new things, initiates. Informative, initiating, movement.</span>
+                <br><span style="color:gold">SEE-IT-THROUGH: Introverted, a quiet type who sees it through (really annoyed if something's unfinished), toned down, generally responsible. Direct, responding, movement.</span>
+                <br><span style="color:limegreen">BEHIND-THE-SCENES: Introverted, a behind the scenes type, kind of floaty, can be flaky, more spontaneous, responsive. Informative, responding, control.</span>
+
+            <br><br>Which of those four sounds MOST like you?
+                <br><input type="radio" class="interaction-style-1" name="structure" value="structure" required><span style="color:red">  structure</span><br>
+                <input type="radio" class="interaction-style-1" name="starter" value="starter" required><span style="color:darkorange">  starter</span><br>
+                <input type="radio" class="interaction-style-1" name="seeitthrough" value="seeitthrough" required><span style="color:gold">  see-it-through</span><br>
+                <input type="radio" class="interaction-style-1" name="background" value="background" required><span style="color:limegreen">  behind the scenes</span><br><br>
+
+            Which of those four sounds SECOND MOST like you?
+                <br><input type="radio" class="interaction-style-2" name="structure" value="structure" required><span style="color:red">  structure</span><br>
+                <input type="radio" class="interaction-style-2" name="starter" value="starter" required><span style="color:darkorange">  starter</span><br>
+                <input type="radio" class="interaction-style-2" name="seeitthrough" value="seeitthrough" required><span style="color:gold">  see-it-through</span><br>
+                <input type="radio" class="interaction-style-2" name="background" value="background" required><span style="color:limegreen">  behind the scenes</span><br><br>
+
+
+            There are also four temperaments.<br>
+                <br><span style="color:darkturquoise">IDEALIST: Head in the clouds, people-focused. Philosophical, endless social possibilities, future focused, searching for the ideal. Often an artist, dreamer, poet, humanities, caring (but these can be stereotypes).</span>
+                <br><span style="color:dodgerblue">INTELLECTUAL: Head in the clouds, follows logic or rationale. Future-thinkers, systems & probabilities, live in a world of "what if." Often engineers, on Reddit, scientific (but these can be stereotypes).</span>
+                <br><span style="color:blueviolet">ARTISAN: Grounded, in the moment, observant, spontaneous, fun, adaptable, free, creative, improviser. Test the rules, test traditions. Live in the moment, mechanical aptitude.</span>
+                <br><span style="color:hotpink">GUARDIAN: Grounded, responsible, disciplined, in some ways traditional, rigid, reliable, planner. Safety, past-focused, "should do." Storytelling, long-term memory experience.</span>
+
+            <br><br>Which of those four sounds MOST like you?
+                <br><input type="radio" class="temperament-1" name="idealist" value="idealist" required><span style="color:darkturquoise">  idealist</span><br>
+                <input type="radio" class="temperament-1" name="intellectual" value="intellectual" required><span style="color:dodgerblue">  intellectual</span><br>
+                <input type="radio" class="temperament-1" name="artisan" value="artisan" required><span style="color:blueviolet">  artisan</span><br>
+                <input type="radio" class="temperament-1" name="guardian" value="guardian" required><span style="color:hotpink">  guardian</span><br><br>
+
+            Which of those four sounds SECOND MOST like you?
+                <br><input type="radio" class="temperament-2" name="idealist" value="idealist" required><span style="color:darkturquoise">  idealist</span><br>
+                <input type="radio" class="temperament-2" name="intellectual" value="intellectual" required><span style="color:dodgerblue">  intellectual</span><br>
+                <input type="radio" class="temperament-2" name="artisan" value="artisan" required><span style="color:blueviolet">  artisan</span><br>
+                <input type="radio" class="temperament-2" name="guardian" value="guardian" required><span style="color:hotpink">  guardian</span><br><br>
+
+
+
+                <br><span style="font-weight: bold">// PART 2 OF 3 //</span><br><br>
+
+                <span style="color:red">Somebody describes you as productive, a busybody, always getting shit done, driven, ambitious, blunt, structured, competitive, "I bet you'll be my boss someday."</span>
+                <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Bernie Sanders, Michelle Obama, Emma Watson, Uma Thurman, Judge Judy, Bill Gates, Al Gore, Courteney Cox, Lucy Liu.)</span></span></span>
+            <br><input type="radio" class="te-dom" name="te-dom-yes" value="2" required>  Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="te-dom" name="te-dom-maybe" value="1" required>  Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="te-dom" name="te-dom-no" value="0" required>  ...nah, that's not me.<br><br>
+
+                <span style="color:darkorange">Somebody describes you as logical, seeking to understand everything, seen as a source of knowledge, "You always want to know why."</span>
+                <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Albert Einstein, Tina Fey, Harrison Ford, Bill Murray, Ashton Kutcher, Anna Kendrick, Ellen Page, Jesse Eisenberg, Vladimir Putin, Simon Cowell, Emily Blunt.)</span></span></span>
+            <br><input type="radio" class="ti-dom" name="ti-dom-yes" value="2" required>  Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="ti-dom" name="ti-dom-maybe" value="1" required>  Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="ti-dom" name="ti-dom-no" value="0" required>  ...nah, that's not me.<br><br>
+
+                <span style="color:gold">Somebody describes you as a social chameleon, warm, charismatic, hyper-aware of others, rarely awkward at a party, you know what to say, adaptable, sympathetic, thinking about your audience, seem to know everyone, "You're so good with people."</span>
+                <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Martin Luther King Jr, Oprah, Emma Stone, Jason Segel, Jennifer Garner, Pope Francis, Selena Gomez, Neil deGrasse Tyson.)</span></span></span>
+            <br><input type="radio" class="fe-dom" name="fe-dom-yes" value="2" required>  Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="fe-dom" name="fe-dom-maybe" value="1" required>  Sort of. I mean, yes, ish, but I don't think it's too defining.<br>
+            <input type="radio" class="fe-dom" name="fe-dom-no" value="0" required>  ...nah, that's not me.<br><br>
+
+                <span style="color:limegreen">Somebody describes you as sticking true to your personal values, the last person to cave from social pressure, authentic, looking at the worth of things, empathetic seeing others' pain through your own eyes, "You really stand for your beliefs regardless of who's watching."</span>
+                    <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Princess Diana, Steven Colbert, Morrissey, Ryan Gosling, Rihanna, John Lennon, Kurt Cobain, Prince, John Green, Bob Dylan.)</span></span></span>
+            <br><input type="radio" class="fi-dom" name="fi-dom-yes" value="2" required>  Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="fi-dom" name="fi-dom-maybe" value="1" required>  Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="fi-dom" name="fi-dom-no" value="0" required>  ...nah, that's not me.<br><br>
+
+                <span style="color:darkturquoise">Somebody describes you as super in the moment, head firmly not in the clouds, engaged in what's happening, realistic, present, seeking sensation, "You're very aware."</span>
+                        <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Dave Chapelle, Meryl Streep, Beyonce, Mila Kunis, Malcolm X, Donald Trump, Jack Nicholson, Pink, Ryan Seacrest, Nicki Minaj.)</span></span></span>
+            <br><input type="radio" class="se-dom" name="se-dom-yes" value="2" required> Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="se-dom" name="se-dom-maybe" value="1" required> Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="se-dom" name="se-dom-no" value="0" required> ...nah, that's not me.<br><br>
+
+                <span style="color:dodgerblue">Somebody describes you as very aware of the the past, observant literally to how things have been before, you notice inconsistencies and contradictions from what you know, intensely relive memories, your memory is organized and critical to you, detail-oriented, "You always tell that story!"</span>
+                            <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Christopher Walken, Gwenyth Paltrow, Bruce Willis, Robert De Niro, Kate Middleton, Nick Offerman, Mother Teresa, Mark Hamill.)</span></span></span>
+            <br><input type="radio" class="si-dom" name="si-dom-yes" value="2" required> Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="si-dom" name="si-dom-maybe" value="1" required> Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="si-dom" name="si-dom-no" value="0" required> ...nah, that's not me.<br><br>
+
+                <span style="color:blueviolet">Somebody describes you as explorative, imaginative, mind bursting with "what if", possibilities, racing, never really present, seeing everything outside yourself as connected, explosion of imagination in all directions, "You're so creative, I wouldn't have come up with that."</span>
+                                <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Robin Williams, Robert Downey Jr, Amy Poehler, Neil Patrick Harris, Ellen DeGeneres, Salvador Dali, Hank Green, Adam Savage, Jerry Seinfeld.)</span></span></span>
+            <br><input type="radio" class="ne-dom" name="ne-dom-yes" value="2" required> Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="ne-dom" name="ne-dom-maybe" value="1" required> Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="ne-dom" name="ne-dom-no" value="0" required> ...nah, that's not me.<br><br>
+
+                <span style="color:hotpink">Somebody describes you as lost in the clouds or lost in thought, dreamy, internally processing so much about your past and living in the future and really anywhere but the present, in a mental soup, mind seems far from reality, constantly calculating the future, unconsciously processing the probability of what will likely happen, coming upon grand visions without trying, not always able to explain your gut feelings, "You look like you're thinking."</span>
+                                    <br><span style="font-size: smaller"><span style="font-style: italic"><span style="color:lightslategray">(Examples: Colin Firth, Carey Mulligan, Benedict Cumberbatch, Elon Musk, George Harrison, Josh Radnor, Julia Stiles, Jodie Foster, Steven Hawking, Jay-Z.)</span></span></span>
+            <br><input type="radio" class="ni-dom" name="ni-dom-yes" value="2" required> Really really sounds like me... in fact this trait could define me.<br>
+            <input type="radio" class="ni-dom" name="ni-dom-maybe" value="1" required> Sort of. I mean, yes, but I don't think it's too defining.<br>
+            <input type="radio" class="ni-dom" name="ni-dom-no" value="0" required> ...nah, that's not me.<br><br>
+
+
+
+                <br><span style="font-weight: bold">// PART 3 OF 3 // -- Please don't go backwards from this point! It could bias the rest of your answers.</span><br>
+
+                <span style="font-style: italic"><span style="font-size: smaller">(Don't get too hung up on the dichotomies.)</span></span><br><br>
+
+                E/I: The dichotomy (1 of 4) that you probably know is <span style="color:red"><span style="font-weight: bold">EXTROVERSION</span></span> or <span style="color:darkorange"><span style="font-weight: bold">INTROVERSION</span></span> -- this doesn't just mean where you get your energy!
+
+                <br><span style="color:red"><span style="text-decoration: underline">Extroversion means:</span> your dominant brain mode focuses outward, you primarily live out in the world, outside of yourself, not so stuck in your head, you naturally initiate.
+                <br><span style="text-decoration: underline">Extroversion does NOT mean:</span> always a shallow peppy social butterfly -- outgoing live-breathe-work managers/CEOs throwing themselves into their work are extroverts too!</span>
+                <br><span style="color:darkorange"><span style="text-decoration: underline">Introversion means:</span> your dominant brain mode focuses inward, you're usually stuck in your head, mentally inside yourself, you usually respond rather than initiate.
+                <br><span style="text-decoration: underline">Introversion does NOT mean:</span> antisocial, smart.</span>
+
+            <br><br>Do you have a guess for which you are?
+                <br><input type="radio" class="i-or-e" name="e+2" required>I'm definitely an <span style="color:red">extrovert</span><br>
+                <input type="radio" class="i-or-e" name="e+1" required>I think I lean <span style="color:red">extrovert</span><br>
+            <input type="radio" class="i-or-e" name="i-e-0" required>Totally unsure, and/or in the middle<br>
+                <input type="radio" class="i-or-e" name="i+1" required>I think I lean <span style="color:darkorange">introvert</span><br>
+                <input type="radio" class="i-or-e" name="i+2" required>I'm definitely an <span style="color:darkorange">introvert</span><br><br>
+
+                N/S: Dichotomy 2 of 4 is <span style="color:gold"><span style="font-weight: bold">INTUITION</span></span> or <span style="color:limegreen"><span style="font-weight: bold">SENSING</span></span>.
+                <br><span style="color:gold"><span style="text-decoration: underline">Intuition means:</span> you care more about theory, usually head in the clouds, mentally distant
+                <br><span style="text-decoration: underline">Intuition does NOT mean:</span> deep, creative, interesting, only ones interested in academia</span>
+                <br><span style="color:limegreen"><span style="text-decoration: underline">Sensing means:</span> you care more applying theory, usually aware of physical environment, observant
+                <br><span style="text-decoration: underline">Sensing does NOT mean:</span> without depth or creativity -- often sensors are better at life because they're not overthinking everything
+                <br>(Example: maybe an intuitive will fail math because they have to understand the meaning, whereas a sensor is like, "...but the teacher told us the steps. It's obvious.")</span>
+
+            <br><br>Do you have a guess for which you are?
+                <br><input type="radio" class="n-or-s" name="n+2" required>I'm definitely an <span style="color:gold">intuitive</span><br>
+                <input type="radio" class="n-or-s" name="n+1" required>I think I lean <span style="color:gold">intuitive</span><br>
+            <input type="radio" class="n-or-s" name="n-s-0" required>Totally unsure, and/or in the middle<br>
+                <input type="radio" class="n-or-s" name="s+1" required>I think I lean <span style="color:limegreen">sensor</span><br>
+                <input type="radio" class="n-or-s" name="s+2" required>I'm definitely a <span style="color:limegreen">sensor</span><br><br>
+
+                T/F: Dichotomy 3 of 4 is <span style="color:darkturquoise"><span style="font-weight: bold">THINKING</span></span> or <span style="color:dodgerblue"><span style="font-weight: bold">FEELING</span></span> -- but obviously everyone thinks AND feels! duh!
+                <br><span style="color:darkturquoise"><span style="text-decoration: underline">Thinking means:</span> valuing logic/rationale/truth over relationships/morals/forgiveness, natural inclination towards facts and justice
+                <br><span style="text-decoration: underline">Thinking does NOT mean:</span> better, smart, soulless, masculine.</span>
+                <br><span style="color:dodgerblue"><span style="text-decoration: underline">Feeling means:</span> valuing relationships/morals/forgiveness over logic/rationale/justice, natural inclination towards people and morality
+                <br><span style="text-decoration: underline">Feeling does NOT mean:</span> better, stupid, sensitive, feminine.</span>
+                <br>Be aware of gender bias! Society often pushes women to become or want to be feelers and men to be thinkers. (society sucks!)
+                <br><span style="font-size: smaller">(When your moral values and logic conflict, which do you go with?)</span>
+
+            <br><br>Do you have a guess for which you are?
+                <br><input type="radio" class="t-or-f" name="t+2" required>I'm definitely a <span style="color:darkturquoise">thinker</span><br>
+                <input type="radio" class="t-or-f" name="t+1" required>I think I lean <span style="color:darkturquoise">thinker</span><br>
+            <input type="radio" class="t-or-f" name="t-f-0" required>Totally unsure, and/or in the middle<br>
+                <input type="radio" class="t-or-f" name="f+1" required>I think I lean <span style="color:dodgerblue">feeler</span><br>
+                <input type="radio" class="t-or-f" name="f+2" required>I'm definitely a <span style="color:dodgerblue">feeler</span><br><br>
+
+
+                J/P: Dichotomy 4 of 4 is the least important, <span style="color:blueviolet"><span style="font-weight: bold">JUDGING</span></span> or <span style="color:hotpink"><span style="font-weight: bold">PERCEIVING</span></span> -- honestly don't worry about this on a surface level, at all.
+
+            <br>Think of perceiving as input and judging as output.
+                <br><span style="color:blueviolet"><span style="text-decoration: underline">Judging means:</span> your dominant way of interacting with the world is output, initiating, making decisions
+                <br><span style="text-decoration: underline">Judging does NOT mean:</span> judgmental! (the stereotype is actually being a planner and/or rigid -- not true)</span>
+                <br><span style="color:hotpink"><span style="text-decoration: underline">Perceiving means:</span> your dominant way of interacting with the world is input, receiving, gathering information
+                <br><span style="text-decoration: underline">Perceiving does NOT mean:</span> perceptive! (the stereotype is actually being more free-flowing and/or procrastinating -- not true)</span>
+            <br>But really don't get too hung up on this. It's only there to encode deeper Myers Briggs stuff, it's not meant so literally.
+                <br><span style="font-size: smaller">(...Myers Briggs is never meant on a literal 4 letter basis! It's so much deeper. Trust me, lmao.)</span>
+
+            <br><br>Do you have a guess for which you are?<br>
+                <input type="radio" class="j-or-p" name="j+1" required>I think I lean <span style="color:blueviolet">judger</span><br>
+            <input type="radio" class="j-or-p" name="j-p-0" required>Totally unsure, in the middle<br>
+                <input type="radio" class="j-or-p" name="p+1" required>I think I lean <span style="color:hotpink">perceiver</span><br>
+
+             <br><span style="font-weight: bold"><span style="font-size: larger"><br>POST-QUESTIONS</span></span><br><br>
+
+
+                  When you get your result, don't let the four-letters throw you off. "Feeler? Then I'm worse at thinking?" = NO! Neil deGrasse Tyson is a "feeling type."
+
+                  <br><br>Myers Briggs exists to help you understand your cognitive processes, <span style="font-weight: bold">how your brain operates</span> relative to others'.
+                  When you get your 4-letter code, go look up the <span style="font-weight: bold">cognitive functions</span> that make you you.
+                   I'll link some sites with your result that will hopefully help you understand yourself and grow!
+                   <span style="font-style: italic">(because knowing "I'm I not E" or especially thinking "I'm 45% extroverted 55% introverted" is wrong and useless! Avoid any sites that do this!)
+
+
+                  <br><br><span style="font-size: smaller">Relevant joke:
+                              "Introvert/extrovert quizzes are so funny because they're always like:
+                              <br>1. Where are you happiest?
+                              <br>A) Reading a book by myself in the dark crying
+                           <br>B) Snorting cocaine off a park bench with 80 of my closest friends"    </span></span>
+
+            <br><br>♡♡♡ Let's see your results! ♡♡♡<br><br>
+
+                <!-- Would be cool to add an "expand/show" section that has more details. ALSO NEED CREDITS/REFERENCES. Maybe an explanation for people who know MBTI  -->
+            <br><br><input type="submit" class="submit" value="Submit">
+            <input type="reset"></fieldset>
+            </span></span></form>
+    </span></span>
+</div>
+
+<!-- Another way of text input: <textarea class="_ta" name="_ta"></textarea><br> -->
+
+<script>
+
+
+    var tempInput1 = document.getElementsByClassName("temperament-1");
+    var tempInput2 = document.getElementsByClassName("temperament-2");
+    var intInput1 = document.getElementsByClassName("interaction-style-2");
+    var intInput2 = document.getElementsByClassName("interaction-style-2");
+
+    var te = document.getElementsByClassName("te-dom");
+    var ti = document.getElementsByClassName("ti-dom");
+    var fe = document.getElementsByClassName("fe-dom");
+    var fi = document.getElementsByClassName("fi-dom");
+    var se = document.getElementsByClassName("se-dom");
+    var si = document.getElementsByClassName("si-dom");
+    var ne = document.getElementsByClassName("ne-dom");
+    var ni = document.getElementsByClassName("ni-dom");
+
+    var nfCalc = ni + ne + fi + fe - si - se - ti - te;
+    var ntCalc = ni + ne + ti + te - si - se - fi - fe;
+    var sjCalc = si + se + fe + se - ne - ni - ti - fi;
+    var spCalc = se + si + ti + fi - ni - ne - te - fe;
+
+    var calcRank = [nfCalc, ntCalc, sjCalc, spCalc ];
+    calcRank.sort(function(a, b){return a - b});
+
+/*    function teDomValue(teDom) {
+        if (teDom == "te-dom-yes")
+           return 2;
+        else if (teDom == "te-dom-maybe")
+           return 1;
+        else if (teDom == "te-dom-no")
+           return 0;
+        else return -1;
+    } */
+
+/*    function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+    }
+    document.getElementById("demo").innerHTML = toCelsius(77);
+
+
+    var d = new Date();
+    alert("Today's date is " + d);   */
+
+</script>
+
+
+// jQuery (necessary for Bootstrap's JavaScript plugins)
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- // Include all compiled plugins (below), or include individual files as needed
+<script src="js/bootstrap.min.js"></script> -->
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script> <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAsA3EJm9qY-SzL5niwCsaDHmKm6HjKVS4",
+        authDomain: "mbti-test-2f09a.firebaseapp.com",
+        databaseURL: "https://mbti-test-2f09a.firebaseio.com",
+        projectId: "mbti-test-2f09a",
+        storageBucket: "",
+        messagingSenderId: "189453065365"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+
+    var form = {}
+    function writeDateData(form) {
+        todaysdate = $('.todaysdate').val();
+        firebase.database().ref('date/'+todaysdate+'/').set(form);
+    }
+
+    $('.submit').click(function(){
+        form.date = $('.todaysdate').val();
+        form.name = $('.name').val();
+
+        console.log(form);
+        writeDateData(form);
+    } )
+
+</script>
+<!-- service cloud.firestore {
+match /databases/{database}/documents {
+match /{document=**} {
+allow read, write;
+}
+}         form. = $('.').val();
+
+} -->
+
+<!--     form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val();
+         form. = $('.').val(); -->
+
+<!--
+            <br><br>PART 3 OF 4<br><br>
+
+            You and your friends are going out to dinner. Everyone has agreed on one restaurant, but you're not feeling it. What do you do?
+            <br><input type="radio" class="" name="" required>Say something, why would I want to stay silent and be unhappy? I should at least speak my mind! (or: You go but it's obvious that you're mad, everyone can tell.)<br>
+            <input type="radio" class="" name="" required>Say nothing, go with the flow... I would feel uncomfortable disrupting the harmony.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            How do you feel about art?
+            <br><input type="radio" class="" name="" required>Art is important to me! Expression is a deep part of me, reflecting my soul.<br>
+            <input type="radio" class="" name="" required>Art is nice and everything but I have shit to do... can we get back to my schedule?<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            How naturally do you feel you understand emotions?
+            <br><input type="radio" class="" name="" required>Other human beings are kind of foreign to me. Like... feelings wat.<br>
+            <input type="radio" class="" name="" required>Pretty naturally.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            Let's say you're in an environmental science class. What are your goals?
+            <br><input type="radio" class="" name="" required>Learning. I'm focused on understanding why climate change is happening. I want to understand, it'll drive me nuts if I don't get it. I'd even sacrifice a better grade for understanding.<br>
+            <input type="radio" class="" name="" required>Getting a good grade. I'm focused on finishing these homework assignments, there's a test coming up... I'd sacrifice learning something for getting it done by the deadline, for sure.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            Your friend tells you that their parent just died. How do you try to comfort them?
+            <br><input type="radio" class="" name="" required>I imagine myself as them, in their shoes, try to infer how they're feeling from their words & body language, guess how their family is probably coping... I naturally exercise compassion.<br>
+            <input type="radio" class="" name="" required>I think about times I've felt similarly, maybe when my grandparent died, and relate those emotions to them. I naturally exercise empathy.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            I'm making a tough decision, like whether to break up with someone. What's a more realistic thought process?
+            <br><input type="radio" class="" name="" required>I love them, but it feels like it's time, I have other things to focus on. I'm no longer as emotionally invested, I know I'll be deeply sad without them, but logically, I've decided to do it. I'm following my logic.<br>
+            <input type="radio" class="" name="" required>I love them, but I don't feel the same passion I used to... I think it all stems from the way the fact that they don't care about social justice like I do, we don't share the same values, and it breaks my heart but I feel I should end it. I'm following my values.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            You're talking to an old friend, someone very different from you. What are you more likely to proudly mention? What's more noteworthy?
+            <br><input type="radio" class="" name="" required>"Yes my social life is thriving. But guess what? I finished a little computer science project! I've been meaning to do it forever, I've gotten carried away with other things, but I was so logical today! It was great!"<br>
+            <input type="radio" class="" name="" required>"Yes my career is thriving. But guess what? I handled a relationship problem so well today! I'd been having conflict with a coworker for a while but today I asked to talk and we communicated and we both feel better! I was so socially aware today! It was great!"<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            Where is your head?
+            <br><input type="radio" class="" name="" required>In the future, or the past... really anywhere but the present. I'm a space cadet. I'm not saying I'm stupid but my mind is like soup, busy... connecting things.<br>
+            <input type="radio" class="" name="" required>In the present. Like, if I'm talking to you, I'm there... or maybe looking at a dog walking by or thinking about how hungry I am idk but I wouldn't say I'm a space cadet. I'm in my body.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+
+            Would you say you're down to earth, or head in the clouds? A martian or an earthling?
+            <br><input type="radio" class="" name="" required>A martin, a space cadet, my head is in the clouds. I think I'm pretty abstract, not good with literal.<br>
+            <input type="radio" class="" name="" required>An earthling, grounded, I am definitely on earth. Aware of my surroundings, present in my life.<br>
+            <input type="radio" class="" name="" required>It's really hard for me to decide this... somewhere in the middle?<br><br>
+-->
+
+</body>
+</html>
